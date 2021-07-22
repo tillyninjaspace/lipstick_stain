@@ -1,5 +1,7 @@
 # Create React App: Lipstick Stain
 ## Developer: Tilly Wright
+Lipstick Stain's Target Completion Date: Aug. 31, 2021
+
 To see my completed projects, go to my portfolio website: https://gracious-mcnulty-e733ac.netlify.app/portfolio.html
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

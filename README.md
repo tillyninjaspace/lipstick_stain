@@ -1,7 +1,6 @@
 # Create React App: Lipstick Stain
-Developer: Tilly Wright
-To see my projects, go to my portfolio website: 
-https://gracious-mcnulty-e733ac.netlify.app/portfolio.html
+## Developer: Tilly Wright
+To see my projects, go to my portfolio website: https://gracious-mcnulty-e733ac.netlify.app/portfolio.html
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

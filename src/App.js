@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import logo from './sensorio_wine_bottles.jpg';
 import './App.css';
 
 function App() {
@@ -7,15 +7,16 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Lipstick Stains
+          <span style = {{color: "red"}}>Lipstick Stains</span> is under development.
         </p>
+        <p>Target Completion Date: August 31, 2021</p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://gracious-mcnulty-e733ac.netlify.app/portfolio.html"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Go Tilly Wright's Portfolio Website to see completed projects
         </a>
       </header>
     </div>

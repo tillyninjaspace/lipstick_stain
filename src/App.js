@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          <span style = {{color: "red"}}>Lipstick Stains</span> is under development.
+          <span style = {{color: "red"}}>Lipstick Stain</span> is under development.
         </p>
         <p>Target Completion Date: August 31, 2021</p>
         <a

@@ -1,4 +1,4 @@
-# Create React App: Lipstick Stain
+# Create React App: Lipstick Stain (Under Development)
 ## Developer: Tilly Wright
 Lipstick Stain's Target Completion Date: Aug. 31, 2021
 

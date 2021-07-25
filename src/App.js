@@ -1,5 +1,7 @@
 import logo from './sensorio_wine_bottles.jpg';
 import './App.css';
+import Posts from './components/Posts';
+import Postform from './components/Postform';
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
           Go Tilly Wright's Portfolio Website to see completed projects
         </a>
       </header>
+      <Postform/>
+      <Posts />
     </div>
   );
 }

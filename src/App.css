@@ -37,3 +37,9 @@
     transform: rotate(360deg);
   }
 }
+
+.newPostForm {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+}

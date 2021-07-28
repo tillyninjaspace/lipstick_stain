@@ -43,3 +43,24 @@
   flex-direction: column;
   margin-bottom: 1em;
 }
+
+.winePlaces {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  /* align-items: space-between; */
+  /* width: 250px; */
+  /* margin: 1em;
+  padding: 1em; */
+}
+
+.winePlace {
+  border: 1em solid gray;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  justify-content: space-between;
+  padding: 50px;
+  margin: 30px;
+}
+

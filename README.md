@@ -4,6 +4,8 @@ Lipstick Stain's Target Completion Date: Aug. 31, 2021
 
 To see my completed projects, go to my portfolio website: https://gracious-mcnulty-e733ac.netlify.app/portfolio.html
 
+More about Lipstick Stain: I'm using React with Redux state management for the front end and created the back-end API (database and server) with PostgreSQL, Node and Express. Both projects are being worked on simultaneously. To view the current API that I've deployed on Heroku, go to: https://lipstickstain.herokuapp.com/api/posts and wait for 30 seconds.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

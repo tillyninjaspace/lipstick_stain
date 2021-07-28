@@ -38,17 +38,18 @@ class Posts extends Component {
     render() {
         const postItems = this.props.posts.map(
             post => 
-            (<div key={post.id}>
+            (<div key={post.id} className="winePlace">
                 {/* <h3>{post.title}</h3>
                 <p>{post.body}</p> */}
                 <h2>{post.name}</h2>
                 <p>{post.description}</p>
+                <img style={{maxWidth: "300px"}} alt="winery or tasting room" src={post.productimage}/>
             </div>)
         )
         return (
             <div>
                 <h1>Lipstick Stain's Visited Wineries</h1>
-                {postItems? postItems : `No posts yet` }
+                <div className="winePlaces">{postItems? postItems : `No posts yet` }</div>
             </div>
         )
     }

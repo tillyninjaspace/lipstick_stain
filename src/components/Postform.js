@@ -118,6 +118,7 @@ class Postform extends Component {
                 name: '',
                 description: '',
                 imagePreview: '',
+                location: ''
               });
         
     }
@@ -126,7 +127,7 @@ class Postform extends Component {
     render() {
         return (
             <div>
-                <h1>Add Post</h1>
+                <h1>Add Wine Place</h1>
                 <form onSubmit={this.onSubmit}>
                     <div className="newPostForm">
                         <label>Name:</label>
@@ -160,7 +161,7 @@ class Postform extends Component {
 
                     </div>
 
-                        <img alt="selected user's file" src={this.state.imagePreview} />
+                        <img alt='' src={this.state.imagePreview} />
                         <input type="file" label="Upload an image" 
                         onChange={this.onFileChange} 
                         required 

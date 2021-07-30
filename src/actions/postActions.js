@@ -36,8 +36,6 @@ export const createPost = (postData) => dispatch => {
 
 fetch('https://lipstickstain.herokuapp.com/user/post',
 {method: 'POST',
-// headers: {'content-type': 'application/json'},
-// body: JSON.stringify(postData)
 body: postData
 })
 .then(res=> res.json())

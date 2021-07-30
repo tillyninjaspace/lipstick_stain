@@ -1,9 +1,11 @@
 import React, { Component } from 'react'
+import {Link} from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { fetchPosts } from '../actions/postActions';
 import Postform from './Postform';
 import Loading from './Loading';
+
 
 class Posts extends Component {
 //WORKED but componentWillMount is deprecating
@@ -46,6 +48,9 @@ class Posts extends Component {
                 <h2>{post.name}</h2>
                 <p>{post.description}</p>
                 <img style={{maxWidth: "300px"}} alt="winery or tasting room" src={post.productimage}/>
+                <Link to={`/posts/${post.id}`} className="button muted-button">
+        View Post
+      </Link>
             </div>)
         )
         return (

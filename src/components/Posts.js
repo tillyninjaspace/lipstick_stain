@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { fetchPosts } from '../actions/postActions';
 import Postform from './Postform';
+import Loading from './Loading';
 
 class Posts extends Component {
 //WORKED but componentWillMount is deprecating
@@ -36,6 +37,7 @@ class Posts extends Component {
 //end NEW    
 
     render() {
+    
         const postItems = this.props.posts.map(
             post => 
             (<div key={post.id} className="winePlace">
@@ -49,7 +51,8 @@ class Posts extends Component {
         return (
             <div>
                 <h1>Lipstick Stain's Visited Wineries</h1>
-                <div className="winePlaces">{postItems? postItems : `No posts yet` }</div>
+                {postItems.length === 0? <Loading /> : <h3>There are {postItems.length} Lipstick Stain Places</h3>}
+                <div className="winePlaces">{postItems.length > 0 ? postItems : <p>Thank you for your patience as we're querying the database.</p> }</div>
             </div>
         )
     }

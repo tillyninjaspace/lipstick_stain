@@ -56,7 +56,7 @@ class Posts extends Component {
         return (
             <div>
                 <h1>Lipstick Stain's Visited Wineries</h1>
-                {postItems.length === 0? <Loading /> : <h3>There are {postItems.length} Lipstick Stain Places</h3>}
+                {postItems.length === 0? <Loading /> : <h3>There are {postItems.length} Visited Wineries or Tasting Rooms</h3>}
                 <div className="winePlaces">{postItems.length > 0 ? postItems : <p>Thank you for your patience as we're querying the database.</p> }</div>
             </div>
         )

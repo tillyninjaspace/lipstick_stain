@@ -2,16 +2,18 @@ import logo from './sensorio_wine_bottles.jpg';
 import './App.css';
 import Posts from './components/Posts';
 import Postform from './components/Postform';
-import {Provider} from 'react-redux';
-import {BrowserRouter, Route, Switch, Redirect} from 'react-router-dom';
-import store from './store'
+// import {Provider} from 'react-redux';
+import {BrowserRouter, Route, Switch, Redirect, useHistory} from 'react-router-dom';
+// import store from './store'
 import { SinglePostPage } from './components/SinglePage';
 
 
 
 function App() {
+  const history = useHistory();
+
   return (
-    <Provider store={store}>
+    // <Provider store={store}>
     <BrowserRouter>
     <div className="App">
       <header className="App-header">
@@ -29,7 +31,7 @@ function App() {
           Go Tilly Wright's Portfolio Website to see completed projects
         </a>
       </header>
-      <Switch>
+      {/* <Switch> */}
       <Route
             exact
             path="/"
@@ -38,18 +40,17 @@ function App() {
                 <Postform/>
                 
                 <Posts />
-          
               </>
             )}
           />
       
      
-      <Route exact path="/posts/:postId"><SinglePostPage/></Route>
+      <Route exact path="/posts/:postId" component = {SinglePostPage}/>
       <Redirect to="/" />
-      </Switch>
+      {/* </Switch> */}
     </div>
     </BrowserRouter>
-    </Provider>
+    // </Provider>
   );
 }
 

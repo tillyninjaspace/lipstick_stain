@@ -3,14 +3,14 @@ import './App.css';
 import Posts from './components/Posts';
 import Postform from './components/Postform';
 // import {Provider} from 'react-redux';
-import {BrowserRouter, Route, Switch, Redirect, useHistory} from 'react-router-dom';
+import {BrowserRouter, Route, Redirect} from 'react-router-dom';
 // import store from './store'
 import { SinglePostPage } from './components/SinglePage';
 
 
 
 function App() {
-  const history = useHistory();
+  // const history = useHistory();
 
   return (
     // <Provider store={store}>

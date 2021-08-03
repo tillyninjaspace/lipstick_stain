@@ -1,6 +1,6 @@
-import { FETCH_POSTS, NEW_POST } from "./types";
+import { FETCH_POSTS, NEW_POST, DELETE_POST } from "./types";
 
-export const fetchPosts= () => dispatch => {
+export const fetchPosts = () => dispatch => {
     // fetch('https://jsonplaceholder.typicode.com/posts')
     fetch('http://lipstickstain.herokuapp.com/api/posts')
     .then(res => res.json())
@@ -12,7 +12,7 @@ export const fetchPosts= () => dispatch => {
 
 export const createPost = (postData) => dispatch => {
     
-    console.log("postAction.js is working")
+    console.log("postAction.js New Post is working")
 //ORIGINAL
     // fetch('https://jsonplaceholder.typicode.com/posts',
     // {method: 'POST',
@@ -50,3 +50,22 @@ body: postData
 }
 
 //dispatch is a resolver so it'll be type and payload
+
+
+//new 7/31
+export const deletePost = (postId) => dispatch =>  {
+    console.log("delete postAction.js reached")
+    fetch(`https://lipstickstain.herokuapp.com/user/post/${postId}`,
+    {   method: 'DELETE',
+    // body: JSON.stringify(postId),
+    //BOTTOM headers work with or without content type
+        // headers: {'Content-Type': 'application/json'}
+    })
+    // .then(res=> res.json()) DON't NEED! Can Delete it
+    .then(post => 
+    dispatch({
+        type: DELETE_POST,
+        payload: post
+    }))
+};
+//end new 7/31

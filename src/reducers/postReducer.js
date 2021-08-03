@@ -1,4 +1,4 @@
-import { FETCH_POSTS, NEW_POST } from "../actions/types";
+import { FETCH_POSTS, NEW_POST, DELETE_POST } from "../actions/types";
 
 const initialState = {
     items: [],
@@ -16,6 +16,13 @@ const postReducer = (state = initialState, action) => {
         case NEW_POST:
             return {
                 ...state,
+                item: action.payload
+            };
+        case DELETE_POST:
+            return {
+                ...state,
+                // item: state.item
+                // items: state.items
                 item: action.payload
             };
         default: 

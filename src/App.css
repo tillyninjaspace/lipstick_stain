@@ -1,5 +1,5 @@
 .App {
-  width: 90%;
+  width: 97%;
   margin: auto;
 }
 
@@ -24,6 +24,11 @@
   font-size: calc(10px + 2vmin);
   color: white;
   padding: 5vh 0 5Vh 0 ;
+  margin-bottom: 5px;
+}
+
+.App-header span {
+  color:rgb(210, 93, 113);
 }
 
 .App-link {
@@ -82,3 +87,27 @@
   margin-top: 1em;
 }
 
+.nav {
+  /* display: flex;
+  flex-direction: column; */
+  /* padding-right: 1em; */
+  margin: 100px 50px 0px 0px;
+  background-color: rgb(210, 93, 113);
+  padding: 5px;
+  color: white;
+  border: 1px solid rgb(11, 13, 155);
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  letter-spacing: .05em;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+.footer {
+  background-color: rgb(210, 93, 113);
+  color: white;
+  border: 1px solid rgb(11, 13, 155);
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  letter-spacing: .05em;
+  font-size: 1em;
+  padding: .25em;
+}

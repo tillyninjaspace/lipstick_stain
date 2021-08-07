@@ -1,16 +1,28 @@
-import React from 'react'
-import { useSelector, connect } from 'react-redux'
-import {useParams, Link} from 'react-router-dom';
-// import { fetchPosts } from '../actions/postActions';
+import React, {useEffect} from 'react'
+import { useSelector, connect, useDispatch } from 'react-redux'
+import {useParams, Link } from 'react-router-dom';
+import { fetchPosts } from '../actions/postActions';
+
 
 export const SinglePostPage = () => {
-  // const { postId } = match.params
+  
+  const dispatch = useDispatch()
+
+  useEffect( () => {
+         
+      try { 
+         dispatch(fetchPosts())
+      } catch {
+          throw Error('Uh Oh')
+      } 
+  }, [dispatch]);   
+
     const {postId} = useParams()
 
     const postList = useSelector(state => state.posts.items)
     const post = postList.find(postItem => postItem.id === Number(postId))
 
-  if (!postList) {
+  if (!postList.length === 0) {
     return (
       <section>
         <h2>Post not found!</h2>
@@ -25,7 +37,7 @@ export const SinglePostPage = () => {
     
     <section style={{paddingTop: "1em", paddingBottom: "1em"}}>
       <Link to="/">Back to All Wine Places</Link>
-      { postList && postList.length > 0  && post && 
+      { postList && postList.length > 0  && post?
       <article className="winery">
         <h2>Wine Place ID: {post.id}</h2>
         <img alt='winery' src={post.productimage}/>
@@ -33,8 +45,12 @@ export const SinglePostPage = () => {
         <p className="post-content">{post.description}</p> 
         <p>Location: {post.location}</p>
         <p>Link: {post.link}</p>
+        
       </article>
+      :
+      <p>Nothing to see.</p>
       } 
+      
     </section>
   )
 }

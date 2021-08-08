@@ -57,6 +57,6 @@ export const SinglePostPage = () => {
 
 // export default SinglePostPage;
 
-const mapStateToProps = state => ({ contacts: state.posts.items })
+// const mapStateToProps = state => ({ contacts: state.posts.items })
 
-export default connect(mapStateToProps)(SinglePostPage);
+// export default connect(mapStateToProps)(SinglePostPage);

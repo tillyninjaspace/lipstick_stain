@@ -60,7 +60,7 @@
 
 .winePlace {
   /* border: .25em solid gray; */
-  box-shadow: 3px 3px black, -1em 0 .4em gray;
+  box-shadow: 3px 3px rgb(96, 94, 94), -1em 0 .4em gray;
   display: flex;
   flex-direction: column;
   width: 200px;
@@ -73,7 +73,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1em solid gray;
+  /* border: 1em solid gray; */
+  box-shadow: 1px 1px rgb(187, 182, 182), -1em 0 .4em gray;
   margin-top: 1em;
 }
 
@@ -121,4 +122,38 @@
   background-color: rgb(210, 93, 113);
   padding: 1em;
   overflow-wrap: anywhere;
+}
+
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.listItem {
+  border: 1px solid black;
+  list-style: none;
+  height: 300px;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  margin: .25em;
+}
+
+.listItem img {
+  max-height: 220px;
+}
+
+.page {
+  display: inline-block;
+  padding-bottom: 1em;
+}
+
+.page button {
+  background: white;
+}
+
+h2 {
+  text-align: center;
 }

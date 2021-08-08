@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { fetchPosts, deletePost } from '../actions/postActions';
 import Loading from './Loading';
+import Postform from './Postform';
 
 
 class Posts extends Component {
@@ -85,7 +86,7 @@ async onDelete (id) {
                 <h2>{post.name}</h2>
                 <p>{post.description}</p>
                 <img style={{maxWidth: "300px"}} alt="winery or tasting room" src={post.productimage}/>
-                <Link to={`/posts/${post.id}`} className="button muted-button">
+                <Link to={`/wineries/${post.id}`} className="button muted-button">
                     View More Details
                 </Link>
                 <p>Active: {post.active? 'Yes' : 'No'}</p>
@@ -99,6 +100,7 @@ async onDelete (id) {
             )
         return (
             <div>
+                <Postform/>
                 <h1>Lipstick Stain's Visited Wineries</h1>
                 {postItems.length === 0? <Loading /> : <h3>There are {postItems.length} Visited Wineries or Tasting Rooms</h3>}
                 <div className="winePlaces">{postItems.length > 0 ? postItems : <p>Thank you for your patience as we're querying the database.</p> }</div>

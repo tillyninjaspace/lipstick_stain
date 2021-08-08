@@ -1,8 +1,8 @@
 // import logo from './sensorio_wine_bottles.jpg';
 import './App.css';
 import Posts from './components/Posts';
-import Postform from './components/Postform';
 import About from './components/About';
+import Welcome from './components/Welcome';
 import Footer from './components/Footer';
 // import {Provider} from 'react-redux';
 import {BrowserRouter, Route, Link, Switch, NavLink} from 'react-router-dom';
@@ -22,11 +22,10 @@ function App() {
   const dispatch = useDispatch()
 
   useEffect( () => {
-         
       try { 
          dispatch(fetchPosts())
       } catch {
-          throw Error('Uh Oh')
+          throw Error('Error with dispatching')
       } 
   }, [dispatch]); 
 
@@ -42,10 +41,6 @@ function App() {
     for (let i = 1; i <= Math.ceil(paginationItems.length/postsPerPage); i++) {
         pageNumbers.push(i);
     }
-
-    // const paginate = () => setCurrentPage(pageNumber);
-    
-    console.log("Page Numbers", pageNumbers)
   //End NEW for Pagination
 
   
@@ -72,7 +67,7 @@ function App() {
       </header>
       {/* <Switch> */}
       <NavLink to="/" className="nav">Home</NavLink>
-    <NavLink to="/posts" className="nav">All Wine Places</NavLink>
+      <NavLink to="/wineries" className="nav">All Wine Places</NavLink>
       <NavLink to="/about" className="nav">About Lipstick Stain</NavLink>
       <hr></hr>
       {/* <Route exact path="/"><Postform/><Posts /></Route> */}
@@ -82,16 +77,14 @@ function App() {
 
          render={() => (             
               <>
-              <Postform/>
-                
+              <Welcome />
                {/* <Posts /> */}
-
-               <h2>Select a Wine Place to Read Review</h2>
+               <h1>Select a Wine Place to Read Review</h1>
                <ul className="pagination">
 
                   {paginationItems && currentPosts.map(post => (
                     <li key={post.id} className="listItem">
-                      <Link to={`/posts/${post.id}`} className="button muted-button">
+                      <Link to={`/wineries/${post.id}`} className="button muted-button">
                       <h3>{post.name}</h3>
                       <img src={post.productimage} alt="Wine or Winery"/>
                 </Link>
@@ -102,7 +95,7 @@ function App() {
                   }
                </ul>
                {/* <ul className="pageIndex"> */}
-               <h5>Go to Page</h5>
+               <h5 style={{textAlign: "left", marginBottom: "0px"}}>Go to Page</h5>
                 {pageNumbers.map(number => (
                     <div key={number} className="page" style={{color: "red"}}>
                         <button onClick={() => setCurrentPage(number)} className="pageLink" >
@@ -118,8 +111,8 @@ function App() {
             
       
       <Route path="/about"><About/></Route>
-      <Route exact path="/posts"><Posts/></Route>
-      <Route exact path="/posts/:postId" component = {SinglePostPage}/>
+      <Route exact path="/wineries"><Posts/></Route>
+      <Route exact path="/wineries/:postId" component = {SinglePostPage}/>
       
       {/* </Switch> */}
       {/* <Redirect to="/" /> */}
@@ -132,19 +125,3 @@ function App() {
 }
 
 export default App;
-
-
-// <Route
-//             exact
-//             path="/"
-
-//             render={() => (
-//               <>
-//                 <Postform/>
-                
-//                 <Posts />
-                
-//               </>
-//             )}
-
-//           />

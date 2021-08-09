@@ -199,3 +199,45 @@ a {
     max-width: 155px;
   }
 }
+
+.login form{
+  /* position: absolute;
+  top: 15px; right: 50px; */
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  padding: 1em;
+  border-radius: 7px;
+  margin: 5px;
+}
+
+.login form button {
+  background-color: rgb(51, 59, 66);
+  color: white;
+  padding: 1em;
+  font-size: 1.1em;
+  border: none;
+  border-radius: 7px;
+  margin: 5px;
+}
+
+
+.login label {
+  font-size: 14px;
+}
+
+.login label:first-child{
+  text-align: center;
+  font-size: 1em;
+}
+
+.logout {
+  color: white;
+  padding: 1em;
+  font-size: 1.1em;
+  border: 1 solid black;
+  border-radius: 7px;
+  margin: 5px;
+  background-color: rgb(169, 43, 43);
+}

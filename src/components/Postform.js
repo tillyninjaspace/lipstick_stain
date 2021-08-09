@@ -91,17 +91,6 @@ class Postform extends Component {
         this.setState({ picture: URL.createObjectURL(e.target.files[0]) });
     };
 
-    //EXTRA
-    // onImagePreview(e) {
-    //     this.setState({ imagePreview: URL.createObjectURL(e.target.files[0]) } )
-    // };
-
-    // onSetPicture(e) {
-    //     this.setState({ picture: URL.createObjectURL(e.target.files[0]) })
-    // };
-    //end EXTRA
-
-
     async onSubmit (e) {
         e.preventDefault();
         const formData =  new FormData(); 
@@ -122,7 +111,6 @@ class Postform extends Component {
               });
         
     }
-
 
     render() {
         return (

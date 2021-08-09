@@ -3,24 +3,30 @@ import React, {useState} from 'react';
 // import Accordion from 'react-bootstrap/Accordion';
 import Postform from './Postform';
 import Updateform from './Updateform';
+import Login from './Login';
 
-const Footer = ({isChanged, setIsChanged}) => {
+const Footer = ({isChanged, setIsChanged, token, setToken}) => {
 
     const [openPostform, setOpenPostform] = useState(false);
     const [openUpdateForm, setOpenUpdateForm] = useState(false)
+    const [openLoginForm, setOpenLoginForm] = useState(false)
 
     const year =  new Date().getFullYear() ;
-
+console.log("Token Under Footer", token)
     return (
         <div className="footer"> 
+        
             <span style={{fontWeight: "bold"}}>&copy;Lipstick Stain {year} by Ninja Space Content</span>
             <p className="footerLinks">
                 <span><a href="/wineries">All Wine Places</a></span>
                 <span><a href="/about">About</a></span>
+
+               { token ? 
                 <span><button onClick={() => setOpenPostform(!openPostform)}>Admin</button></span>
-            </p>
+               : ""}
+                </p>
             <p>Lipstain Stain was built by the 
-                author using React, Redux, 
+                author using React,
                 PostgresSQL, Node, Express and Cloudinary.
                 </p>
             <p>All reviews are personal opinions of the author and should obviously not
@@ -29,6 +35,11 @@ const Footer = ({isChanged, setIsChanged}) => {
                 written as a hobby and not sponsored in any way at this time.
                 Thank you for visiting.
                 </p>
+            <button onClick={()=>{setOpenLoginForm(!openLoginForm)}}>Lipstick Stain Admin</button>    
+            { openLoginForm?  <Login token={token} setToken={setToken}
+             setOpenPostform={setOpenPostform} setOpenUpdateForm={setOpenUpdateForm}
+            /> : '' }
+        
             { openPostform? 
                 <Postform/>
                 :
@@ -38,7 +49,7 @@ const Footer = ({isChanged, setIsChanged}) => {
             {openPostform? 
 
                 <div>
-                <p style={{fontWeight: "bold", marginTop: "30px", marginLeft: ".5em"}}>Other Admins Tools:</p>
+                <p style={{fontWeight: "bold", marginTop: "30px", marginLeft: ".5em"}}>Other Admin Tools:</p>
                 <button style={{backgroundColor: "rgb(51, 59, 66)", color: "white",
                     padding: "1em", fontSize: "1.1em", border: "none", borderRadius: "7px",
                 }}onClick={() => setOpenUpdateForm(!openUpdateForm) }>{openUpdateForm?

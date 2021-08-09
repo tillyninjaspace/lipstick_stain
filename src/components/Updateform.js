@@ -36,7 +36,7 @@ const handleSubmit = async (event) => {
             display: "flex", flexDirection: "column", padding: "1rem", color: "black"
             }}>
        
-            <h3 style={{backgroundColor: "rgb(210, 93, 113)", color: "white"}}>Update Post </h3>
+            <h3 style={{backgroundColor: "rgb(51, 59, 66)", color: "white"}}>Update Post </h3>
 
             <p style={{fontWeight: "bolder"}}>ID to Update: {id}
             {/* <span 

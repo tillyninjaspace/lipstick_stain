@@ -14,10 +14,13 @@ import {useState, useEffect} from 'react';
 import { fetchPosts } from './actions/postActions';
 // import Updateform from './components/Updateform';
 import headerLogo  from './lipstickstain_logo.gif'
+// import Login from './components/Login';
 
 function App() {
 
   const [isChanged, setIsChanged] = useState(false)
+  const [token, setToken] = useState('');
+
   //NEW for Pagination
   const [currentPage, setCurrentPage] = useState(1);
   const [postsPerPage] = useState(10);
@@ -46,14 +49,14 @@ function App() {
     }
   //End NEW for Pagination
 
-  
+  console.log("TOKEN", token)
   return (
     // <Provider store={store}>
     <BrowserRouter>
     <div className="App">
     
       <header className="App-header">
-      
+        {/* <Login token={token} setToken={setToken}/> */}
         {/* <img src={logo} className="App-logo" alt="logo" /> */}
         {/* <img src={redwine} className="glass" alt="red wine" /> */}
         <p className="bannerHeader">
@@ -120,7 +123,7 @@ function App() {
       
       {/* </Switch> */}
       {/* <Redirect to="/" /> */}
-      <Footer isChanged={isChanged} setIsChanged={setIsChanged}/>
+      <Footer isChanged={isChanged} setIsChanged={setIsChanged} token={token} setToken={setToken}/>
     </div>
    
     </BrowserRouter>

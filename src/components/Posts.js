@@ -89,6 +89,7 @@ async onDelete (id) {
                     View More Details
                 </Link>
                 <p>Active: {post.active? 'Yes' : 'No'}</p>
+                <p>Location: {post.location}</p>
                 {/* <button className="deleteButton" onClick={() => {this.onDelete(post.id)
                     const thisActiveChangePost = this.props.posts.find(inActiveItem => inActiveItem.id === post.id)
                     console.log("What is the found post for new Inactive", thisActiveChangePost)

@@ -39,9 +39,9 @@ export const SinglePostPage = () => {
       <Link to="/">Back to All Wine Places</Link>
       { postList && postList.length > 0  && post?
       <article className="winery">
-        <h2>Wine Place ID: {post.id}</h2>
+        <h3>Wine Place ID: {post.id}</h3>
         <img alt='winery' src={post.productimage}/>
-        <h3>{post.name}</h3>
+        <h2>{post.name}</h2>
         <p className="post-content">{post.description}</p> 
         <p>Location: {post.location}</p>
         <p>Link: {post.link}</p>

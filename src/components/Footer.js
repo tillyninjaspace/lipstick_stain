@@ -2,8 +2,10 @@ import React, {useState} from 'react';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 // import Accordion from 'react-bootstrap/Accordion';
 import Postform from './Postform';
+import Updateform from './Updateform';
 
-const Footer = () => {
+const Footer = ({isChanged, setIsChanged}) => {
+
     const [openPostform, setOpenPostform] = useState(false);
     const [openUpdateForm, setOpenUpdateForm] = useState(false)
 
@@ -30,10 +32,6 @@ const Footer = () => {
                 Thank you for visiting.
                 </p>
             { openPostform? 
-                // <p>
-                //     Do you see this?
-
-                // </p>
                 <Postform/>
                 :
                 ''
@@ -45,8 +43,20 @@ const Footer = () => {
                 <p style={{fontWeight: "bold", marginTop: "30px", marginLeft: ".5em"}}>Other Admins Tools:</p>
                 <button style={{backgroundColor: "rgb(51, 59, 66)", color: "white",
                     padding: "1em", fontSize: "1.1em", border: "none", borderRadius: "7px",
-                }}onClick={() => setOpenPostform(!openPostform) }>Update a Wine Place</button>
+                }}onClick={() => setOpenUpdateForm(!openUpdateForm) }>{openUpdateForm?
+                    `Close Update Form`
+                    
+                    :
+                    `Update a Wine Place`
+                    }
+                    </button>
                 </div>
+                :
+                ''
+            }
+
+            { openUpdateForm? 
+                <Updateform isChanged={isChanged} setIsChanged={setIsChanged}/>
                 :
                 ''
             }

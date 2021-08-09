@@ -12,7 +12,7 @@ import { SinglePostPage } from './components/SinglePage';
 import {useSelector, useDispatch} from 'react-redux';
 import {useState, useEffect} from 'react';
 import { fetchPosts } from './actions/postActions';
-import Updateform from './components/Updateform';
+// import Updateform from './components/Updateform';
 import headerLogo  from './lipstickstain_logo.gif'
 
 function App() {
@@ -88,11 +88,11 @@ function App() {
 
                   {paginationItems && currentPosts.map(post => (
                     <li key={post.id} className="listItem">
-                      <Link to={`/wineries/${post.id}`} className="button muted-button">
+                    <Link to={`/wineries/${post.id}`} className="button muted-button">
                       <p>{post.id}</p>
                       <h3>{post.name}</h3>
-                      <img src={post.productimage} alt="Wine or Winery"/>
-                </Link>
+                      <p style={{textAlign: 'center'}}><img src={post.productimage} alt="Wine or Winery"/></p>
+                    </Link>
                       
                       
                     </li>
@@ -108,7 +108,7 @@ function App() {
                     </div>
                 )
                 )}
-                <Updateform isChanged={isChanged} setIsChanged={setIsChanged} />
+                {/* <Updateform isChanged={isChanged} setIsChanged={setIsChanged} /> */}
               </>           
             )}
           />
@@ -120,7 +120,7 @@ function App() {
       
       {/* </Switch> */}
       {/* <Redirect to="/" /> */}
-      <Footer/>
+      <Footer isChanged={isChanged} setIsChanged={setIsChanged}/>
     </div>
    
     </BrowserRouter>

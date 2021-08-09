@@ -33,7 +33,7 @@ const handleSubmit = async (event) => {
     return (
 
        <form onSubmit={handleSubmit} style={{position: "fixed", top: "150px", left:"30%", zIndex: "1", backgroundColor:"white", border: "1px solid green",
-            display: "flex", flexDirection: "column", padding: "1rem"
+            display: "flex", flexDirection: "column", padding: "1rem", color: "black"
             }}>
        
             <h3 style={{backgroundColor: "rgb(210, 93, 113)", color: "white"}}>Update Post </h3>
@@ -46,7 +46,8 @@ const handleSubmit = async (event) => {
             </p>
             <label>ID:</label>
             <input type="number" placeholder="ID" value={id}
-                onChange={ (event) => setId(event.target.value)}
+                onChange={ (event) => {setId(event.target.value)               
+                }}
             />
             <label>Name:</label>
             <input type="text" placeholder="Name" value={name}

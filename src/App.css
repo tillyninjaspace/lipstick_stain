@@ -110,6 +110,7 @@
   padding: 1em;
   height: 10em;
   border-radius: 7px;
+  margin-top: 30px;
 }
 
 .footerLinks {
@@ -132,6 +133,8 @@
   background-color: rgb(210, 93, 113);
   padding: 1em;
   overflow-wrap: anywhere;
+  display: flex;
+  flex-direction: column;
 }
 
 .pagination {
@@ -167,9 +170,14 @@
 h1, h2, h3, h4, h5 {
   text-align: center;
   color: rgb(51, 59, 66);
+  /* font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
 }
 
 a {
   color: white;
   color: rgb(52, 128, 172);
+}
+
+.appName {
+  font-size: 2em;
 }

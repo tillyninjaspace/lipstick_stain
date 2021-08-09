@@ -1,4 +1,5 @@
 // import logo from './sensorio_wine_bottles.jpg';
+
 import './App.css';
 import Posts from './components/Posts';
 import About from './components/About';
@@ -12,6 +13,7 @@ import {useSelector, useDispatch} from 'react-redux';
 import {useState, useEffect} from 'react';
 import { fetchPosts } from './actions/postActions';
 import Updateform from './components/Updateform';
+import headerLogo  from './lipstickstain_logo.gif'
 
 function App() {
 
@@ -55,15 +57,16 @@ function App() {
         {/* <img src={logo} className="App-logo" alt="logo" /> */}
         {/* <img src={redwine} className="glass" alt="red wine" /> */}
         <p className="bannerHeader">
-          <span>Lipstick Stain</span> is under development. Target Completion Date: August 31, 2021.&nbsp;  
-        <a style={{textAlign: "center"}}
+          <img style={{width: "50px"}}src={headerLogo} alt="Lipstick Stain Logo"/>
+          <span className="appName">Lipstick Stain </span>
+          <span>Wine Reviews in San Luis Obispo County by a Local</span> 
+          {/* <a style={{textAlign: "center"}}
           className="App-link"
           href="https://gracious-mcnulty-e733ac.netlify.app/portfolio.html"
           target="_blank"
           rel="noopener noreferrer"
-        >
-           Go Tilly Wright's Portfolio Website to see completed projects
-        </a>
+          >Go to my Portfolio to see completed work
+          </a> */}
         </p>
       </header>
       {/* <Switch> */}

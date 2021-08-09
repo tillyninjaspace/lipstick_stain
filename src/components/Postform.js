@@ -127,7 +127,7 @@ class Postform extends Component {
     render() {
         return (
             <div>
-                <h1>Add Wine Place</h1>
+                <h1>Add a Wine Place</h1>
                 <form onSubmit={this.onSubmit}>
                     <div className="newPostForm">
                         <label>Name:</label>

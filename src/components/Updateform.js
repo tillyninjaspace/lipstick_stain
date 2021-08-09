@@ -8,13 +8,14 @@ const Updateform = ({isChanged, setIsChanged}) => {
     const [location, setLocation] = useState('')
     const [link, setLink] = useState('')
     const [active, setActive] = useState(true)
+    const [productimage, setProductimage] = useState('')
 
 const handleSubmit = async (event) => {
     event.preventDefault()
-    console.log("Starting to Submit Update:", id, name, description, location, link, active)
+    console.log("Starting to Submit Update:", id, name, description, location, link, active, productimage)
     setIsChanged(false)
     try {
-        const update = await updatingPost(Number(id), name, description, location, link, active)
+        const update = await updatingPost(Number(id), name, description, location, link, active, productimage)
         console.log("Data updated: ", update)
         setIsChanged(true)
         setName('')
@@ -22,6 +23,7 @@ const handleSubmit = async (event) => {
         setLocation('')
         setLink('')
         setId(0)
+        setProductimage('')
 
     } catch (error) {
         console.error(error)
@@ -65,6 +67,10 @@ const handleSubmit = async (event) => {
             <label>Active:</label>
             <input type="text" placeholder="Active" value={true}
                 onChange={ (event) => setActive(event.target.value)}
+            />
+             <label>Image:</label>
+            <input type="text" placeholder="productimage" value={productimage}
+                onChange={ (event) => setProductimage(event.target.value)}    
             />
             <button style={{margin: "5px"}} type="submit">Submit Changes</button>
 

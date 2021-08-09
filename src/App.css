@@ -54,14 +54,9 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  /* align-items: space-between; */
-  /* width: 250px; */
-  /* margin: 1em;
-  padding: 1em; */
 }
 
 .winePlace {
-  /* border: .25em solid gray; */
   box-shadow: 3px 3px rgb(96, 94, 94), -1em 0 .4em gray;
   display: flex;
   flex-direction: column;
@@ -132,7 +127,7 @@
 }
 
 .bannerHeader {
-  width: 600px;
+  max-width: 600px;
   text-align: left;
   background-color: rgb(210, 93, 113);
   padding: 1em;
@@ -146,7 +141,7 @@
 }
 
 .listItem {
-  border: 1px solid black;
+  border: 5px outset rgb(213, 219, 224);
   list-style: none;
   height: 300px;
   min-width: 200px;

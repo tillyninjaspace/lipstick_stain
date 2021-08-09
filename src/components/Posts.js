@@ -6,7 +6,6 @@ import { fetchPosts, deletePost } from '../actions/postActions';
 import Loading from './Loading';
 import Postform from './Postform';
 
-
 class Posts extends Component {
 
 //Replacing componentWillMount
@@ -16,15 +15,16 @@ class Posts extends Component {
 //end Replacing    
 
 //Working but componentWillReceiveProps is deprecating
+
     componentWillReceiveProps(nextProps) {
         if(nextProps.newPost) {
             this.props.posts.unshift(nextProps.newPost)
         }
 
-        if(nextProps.deletePost) {
-            console.log("nextProps.deletePost")
-            this.props.posts.unshift(nextProps.deletePost)
-        }
+        // if(nextProps.deletePost) {
+        //     console.log("nextProps.deletePost")
+        //     this.props.posts.unshift(nextProps.deletePost)
+        // }
     console.log("DID this RUN?!")
     }
 //end Working
@@ -76,13 +76,12 @@ async onDelete (id) {
         console.error(error)
     }
 };
-
-
     render() {
     
         const postItems = this.props.posts.map(
             post => 
             ( <div key={post.id} className="winePlace">
+                <h2>ID: {post.id}</h2>
                 <h2>{post.name}</h2>
                 <p>{post.description}</p>
                 <img style={{maxWidth: "300px"}} alt="winery or tasting room" src={post.productimage}/>
@@ -90,14 +89,18 @@ async onDelete (id) {
                     View More Details
                 </Link>
                 <p>Active: {post.active? 'Yes' : 'No'}</p>
-                    <button className="deleteButton" onClick={() => {this.onDelete(post.id)
+                <button className="deleteButton" onClick={() => {this.onDelete(post.id)
                     const thisActiveChangePost = this.props.posts.find(inActiveItem => inActiveItem.id === post.id)
                     console.log("What is the found post for new Inactive", thisActiveChangePost)
                     thisActiveChangePost.active = false;
                 }
                 }>DELETE</button>
+
+                <button>Update Place</button>
             </div>)
             )
+          
+
         return (
             <div>
                 <Postform/>
@@ -113,13 +116,13 @@ Posts.propTypes = {
     fetchPosts: PropTypes.func.isRequired,
     posts: PropTypes.array.isRequired,
     newPost: PropTypes.object,
-    deletePost: PropTypes.object
+    // deletePost: PropTypes.object
 };
 
 const mapStateToProps = state => ({
     posts: state.posts.items,
     newPost: state.posts.item,
-    deletePost: state.posts.item
+    // deletePost: state.posts.item
 });
 
 export default connect(mapStateToProps, { fetchPosts, deletePost })(Posts);

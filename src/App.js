@@ -11,10 +11,11 @@ import { SinglePostPage } from './components/SinglePage';
 import {useSelector, useDispatch} from 'react-redux';
 import {useState, useEffect} from 'react';
 import { fetchPosts } from './actions/postActions';
+import Updateform from './components/Updateform';
 
 function App() {
 
-
+  const [isChanged, setIsChanged] = useState(false)
   //NEW for Pagination
   const [currentPage, setCurrentPage] = useState(1);
   const [postsPerPage] = useState(10);
@@ -27,7 +28,7 @@ function App() {
       } catch {
           throw Error('Error with dispatching')
       } 
-  }, [dispatch]); 
+  }, [dispatch, isChanged]); 
 
   const paginationItems = useSelector(state => state.posts.items)
   console.log("Pagination Items", paginationItems)
@@ -79,12 +80,13 @@ function App() {
               <>
               <Welcome />
                {/* <Posts /> */}
-               <h1>Select a Wine Place to Read Review</h1>
+               <h1>Select a Wine Place to Read a Review</h1>
                <ul className="pagination">
 
                   {paginationItems && currentPosts.map(post => (
                     <li key={post.id} className="listItem">
                       <Link to={`/wineries/${post.id}`} className="button muted-button">
+                      <p>{post.id}</p>
                       <h3>{post.name}</h3>
                       <img src={post.productimage} alt="Wine or Winery"/>
                 </Link>
@@ -94,7 +96,6 @@ function App() {
                   ))
                   }
                </ul>
-               {/* <ul className="pageIndex"> */}
                <h5 style={{textAlign: "left", marginBottom: "0px"}}>Go to Page</h5>
                 {pageNumbers.map(number => (
                     <div key={number} className="page" style={{color: "red"}}>
@@ -104,7 +105,7 @@ function App() {
                     </div>
                 )
                 )}
-            {/* </ul> */}
+                <Updateform isChanged={isChanged} setIsChanged={setIsChanged} />
               </>           
             )}
           />

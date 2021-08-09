@@ -1,7 +1,6 @@
 import { FETCH_POSTS, NEW_POST, DELETE_POST } from "./types";
 
 export const fetchPosts = () => dispatch => {
-    // fetch('https://jsonplaceholder.typicode.com/posts')
     fetch('http://lipstickstain.herokuapp.com/api/posts')
     .then(res => res.json())
     .then(info => dispatch({
@@ -51,8 +50,6 @@ body: postData
 
 //dispatch is a resolver so it'll be type and payload
 
-
-//new 7/31
 export const deletePost = (postId) => dispatch =>  {
     console.log("delete postAction.js reached")
     fetch(`https://lipstickstain.herokuapp.com/user/post/${postId}`,
@@ -68,4 +65,3 @@ export const deletePost = (postId) => dispatch =>  {
         payload: post
     }))
 };
-//end new 7/31

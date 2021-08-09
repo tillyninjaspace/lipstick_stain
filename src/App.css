@@ -108,7 +108,7 @@
   letter-spacing: .05em; */
   font-size: 1em;
   padding: 1em;
-  height: 10em;
+  min-height: 10em;
   border-radius: 7px;
   margin-top: 30px;
 }

@@ -32,7 +32,7 @@ const handleSubmit = async (event) => {
 
     return (
 
-       <form onSubmit={handleSubmit} style={{position: "fixed", top: "175px", left:"30%", zIndex: "1", backgroundColor:"white", border: "1px solid green",
+       <form onSubmit={handleSubmit} style={{position: "fixed", top: "150px", left:"30%", zIndex: "1", backgroundColor:"white", border: "1px solid green",
             display: "flex", flexDirection: "column", padding: "1rem"
             }}>
        

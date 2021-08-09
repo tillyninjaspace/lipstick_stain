@@ -185,3 +185,17 @@ a {
 .appName {
   font-size: 2em;
 }
+
+@media only screen and (max-width: 600px) {
+  .nav {
+    font-size: 1.25em;
+  }
+
+  .listItem {
+    width: 200px;
+  }
+
+  .listItem img {
+    max-width: 155px;
+  }
+}

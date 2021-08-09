@@ -17,8 +17,6 @@ const Footer = ({isChanged, setIsChanged}) => {
             <p className="footerLinks">
                 <span><a href="/wineries">All Wine Places</a></span>
                 <span><a href="/about">About</a></span>
-                <span>Family Friendly Wineries in Paso Robles</span>
-                <span>Family Friendly Wineries in Edna Valley</span>
                 <span><button onClick={() => setOpenPostform(!openPostform)}>Admin</button></span>
             </p>
             <p>Lipstain Stain was built by the 

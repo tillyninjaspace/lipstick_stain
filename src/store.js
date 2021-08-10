@@ -3,12 +3,12 @@ import thunk from 'redux-thunk';
 import rootReducer from './reducers';
 import { composeWithDevTools } from 'redux-devtools-extension';
 const composedEnhancer = composeWithDevTools(applyMiddleware(thunk))
-// const initialState = {};
+const initialState = {};
 // const middleware = [thunk];
 
 const store = createStore(
     rootReducer, 
-    // initialState, 
+    initialState, 
     composedEnhancer
     // compose(
     // applyMiddleware(...middleware),

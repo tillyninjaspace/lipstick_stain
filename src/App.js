@@ -1,5 +1,7 @@
 // import logo from './sensorio_wine_bottles.jpg';
-
+//trying to fix safari
+import 'babel-polyfill';
+//end trying to fix safari
 import './App.css';
 import Posts from './components/Posts';
 import About from './components/About';

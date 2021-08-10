@@ -1,3 +1,8 @@
+//trying to fix fetch issue? on safari
+import 'babel-polyfill';
+import fetch from 'cross-fetch';
+//end trying...
+
 import { FETCH_POSTS, NEW_POST, DELETE_POST } from "./types";
 
 export const fetchPosts = () => dispatch => {

@@ -215,11 +215,12 @@ a {
 .login form button {
   background-color: rgb(51, 59, 66);
   color: white;
-  padding: 1em;
+  padding: .5em;
   font-size: 1.1em;
   border: none;
   border-radius: 7px;
   margin: 5px;
+  margin-top: 1em;
 }
 
 
@@ -234,7 +235,7 @@ a {
 
 .logout {
   color: white;
-  padding: 1em;
+  padding: .5em;
   font-size: 1.1em;
   border: 1 solid black;
   border-radius: 7px;

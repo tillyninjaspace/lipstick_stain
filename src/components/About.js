@@ -1,4 +1,5 @@
 import React from 'react';
+import HorizontalAd from './HorizontalAd';
 
 const About = () => {
 
@@ -31,6 +32,17 @@ const About = () => {
             </p>
             <p>To learn more about San Luis Obispo County, read this local blog:  &nbsp;
                 <a href="http://sanluisobispomom.com" target="_blank" rel="noreferrer" title="local SLO blogger">SanLuisObispoMom.com.</a></p>
+
+            <p>
+            
+{/* Adsense */}
+            <HorizontalAd/>
+
+
+{/* End Adsense */}
+
+            </p>
+
         </div>
     )
 };

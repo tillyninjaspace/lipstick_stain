@@ -36,7 +36,7 @@ export const createPost = (postData) => dispatch => {
 // let headers = new Headers();
 // headers.append('Content-Type', 'application/json');
 //     headers.append('Accept', 'application/json');
-//     headers.append('Origin','http://localhost:3000');
+
 
 fetch('https://lipstickstain.herokuapp.com/user/post',
 {method: 'POST',

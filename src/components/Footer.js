@@ -16,7 +16,7 @@ console.log("Token Under Footer", token)
     return (
         <div className="footer"> 
         
-            <span style={{fontWeight: "bold"}}>&copy;Lipstick Stain {year} by Ninja Space Content</span>
+            <span style={{fontWeight: "bold"}}>&copy;LipstainedGlass.com {year} by Ninja Space Content</span>
             <p className="footerLinks">
                 <span><a href="/wineries">All Wine Places</a></span>
                 <span><a href="/about">About</a></span>
@@ -25,17 +25,17 @@ console.log("Token Under Footer", token)
                 <span><button onClick={() => setOpenPostform(!openPostform)}>Admin</button></span>
                : ""}
                 </p>
-            <p>Lipstain Stain was built by the 
+            <p>Lipstained Glass was built by the 
                 author using React,
                 PostgresSQL, Node, Express and Cloudinary.
                 </p>
-            <p>All reviews are personal opinions of the author and should obviously not
-                be received as the be-all review. Everyone's tastebuds
-                have distinct preferences. All are
+            <p>All reviews are personal opinions of the author and I encourage you to come
+                with an open mind with wine tasting! Everyone's tastebuds
+                have distinct preferences but preferences can change. All reviews are
                 written as a hobby and not sponsored in any way at this time.
                 Thank you for visiting.
                 </p>
-            <button onClick={()=>{setOpenLoginForm(!openLoginForm)}}>Lipstick Stain Admin</button>    
+            <button onClick={()=>{setOpenLoginForm(!openLoginForm)}}>Lipstained Glass Admin</button>    
             { openLoginForm?  <Login token={token} setToken={setToken}
              setOpenPostform={setOpenPostform} setOpenUpdateForm={setOpenUpdateForm}
             /> : '' }

@@ -1,10 +1,15 @@
-# Create React App: Lipstick Stain (Under Development)
+# Create React App: Lipstained Glass (Under Development)
 ## Developer: Tilly Wright
-Lipstick Stain's Target Completion Date: Aug. 31, 2021
+Lipstained Glass' Target Completion Date: Aug. 31, 2021
 
 To see my completed projects, go to my portfolio website: https://gracious-mcnulty-e733ac.netlify.app/portfolio.html
 
-More about Lipstick Stain: I'm using React with Redux state management for the front end and created the back-end API (database and server) with PostgreSQL, Node and Express. Both projects are being worked on simultaneously. To view the current API that I've deployed on Heroku, go to: https://lipstickstain.herokuapp.com/api/posts and wait for 30 seconds.
+More about Lipstained Glass: I'm using React with Redux state management for the front end and created the back-end API (database and server) with PostgreSQL, Node and Express. Both projects are being worked on simultaneously. To view the current API that I've deployed on Heroku, go to: https://lipstickstain.herokuapp.com/api/posts and wait for 30 seconds.
+
+Front End Deployed via AWS Amplify: https://master.d3ja84au7g5hzi.amplifyapp.com/wineries
+and
+Netlify with custom domain: https://lipstainedglass.com
+Come back on August 31, 2021 to see more posts and a more clean up deployed version.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -15,7 +20,6 @@ In the project directory, you can run:
 ### `npm start`
 
 Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.

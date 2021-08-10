@@ -62,8 +62,8 @@ function App() {
         {/* <img src={logo} className="App-logo" alt="logo" /> */}
         {/* <img src={redwine} className="glass" alt="red wine" /> */}
         <p className="bannerHeader">
-          <img style={{width: "50px"}}src={headerLogo} alt="Lipstick Stain Logo"/>
-          <span className="appName">Lipstick Stain </span>
+          <img style={{width: "50px"}}src={headerLogo} alt="Lipstained Glass Logo"/>
+          <span className="appName">Lipstained Glass </span>
           <span>Wine Reviews in San Luis Obispo County by a Local</span> 
           {/* <a style={{textAlign: "center"}}
           className="App-link"
@@ -77,7 +77,7 @@ function App() {
       {/* <Switch> */}
       <NavLink to="/" className="nav">Home</NavLink>
       <NavLink to="/wineries" className="nav">All Wine Places</NavLink>
-      <NavLink to="/about" className="nav">About Lipstick Stain</NavLink>
+      <NavLink to="/about" className="nav">About</NavLink>
       <hr></hr>
       {/* <Route exact path="/"><Postform/><Posts /></Route> */}
        <Route

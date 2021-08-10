@@ -6,7 +6,7 @@ import fetch from 'cross-fetch';
 import { FETCH_POSTS, NEW_POST, DELETE_POST } from "./types";
 
 export const fetchPosts = () => dispatch => {
-    fetch('http://lipstickstain.herokuapp.com/api/posts')
+    fetch('https://lipstickstain.herokuapp.com/api/posts')
     .then(res => res.json())
     .then(info => dispatch({
         type:FETCH_POSTS,

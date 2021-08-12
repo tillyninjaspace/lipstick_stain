@@ -10,7 +10,7 @@ const About = () => {
                 in the area here surrounded by a lot of farm land, the easy access of getting wine straight from the source 
                 in this environment is a gift so I started an adventure of wine tasting. At first, I wasn't sure if I'd fit in as a stay at home mom who 
                 is usually in casual wear. I went to my first winery with an expectation that it was going
-                to be mainly the rich and fancy wearing nice dresses to do wine tasting like the places I visited in Napa Valley.
+                to be mainly the rich and fancy wearing nice al fits that go wine tasting; like the places I visited in Napa Valley.
                 It is not like that here on a normal week day but you will find special groups or bachelor/bachelorette parties who do come dressed well.
                 Tastings are half the prices of the wineries in Napa Valley and the grapes that are used to make
                 the wine are grown and produced here. Some of these wines are renowned award winners!
@@ -31,10 +31,7 @@ const About = () => {
             </p>
             <p>To learn more about San Luis Obispo County, read this local blog:  &nbsp;
                 <a href="http://sanluisobispomom.com" target="_blank" rel="noreferrer" title="local SLO blogger">SanLuisObispoMom.com.</a></p>
-
-            <p>
-           
-            
+  
             <ul>
             Ideas for Picnic Sets:
                 <li>
@@ -48,11 +45,7 @@ const About = () => {
 
 {/* Adsense */}
             {/* <HorizontalAd/> */}
-
-
 {/* End Adsense */}
-
-            </p>
 
         </div>
     )

@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react'
-import { useSelector, connect, useDispatch } from 'react-redux'
+import { useSelector, useDispatch } from 'react-redux'
 import {useParams, Link } from 'react-router-dom';
 import { fetchPosts } from '../actions/postActions';
 
@@ -30,8 +30,8 @@ export const SinglePostPage = () => {
     )
   }
 
-  console.log("What is the selected postList?", postList,
-  "What's the Post ITEM", post)
+  // console.log("What is the selected postList?", postList,
+  // "What's the Post ITEM", post)
 
   return (
     

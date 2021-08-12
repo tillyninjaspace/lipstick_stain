@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../sensorio_wine_bottles.jpg';
+
 import giflogo from '../lipstickstain_logo.gif'
 
 const Loading = () => {

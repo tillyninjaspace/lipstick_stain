@@ -13,7 +13,6 @@ const Login = ({setToken, token, setOpenPostform, setOpenUpdateForm}) => {
 
     const handleSubmit = async (e) =>{
         e.preventDefault();
-        console.log("USERNAME", username, "PASSWORD", password)
         try {
             const user = await logIn(username, password)
             if (user.token) {
@@ -21,7 +20,7 @@ const Login = ({setToken, token, setOpenPostform, setOpenUpdateForm}) => {
             setUsername('')
             setPassword('')
             } else {
-                console.log("Username and Password Not Valid")
+             console.log("Username and Password Not Valid")
             }
           } catch (error) {
             console.error(error)

@@ -25,7 +25,6 @@ class Posts extends Component {
         //     console.log("nextProps.deletePost")
         //     this.props.posts.unshift(nextProps.deletePost)
         // }
-    console.log("DID this RUN?!")
     }
 //end Working
 
@@ -52,10 +51,10 @@ class Posts extends Component {
     //         this.props.posts.unshift(nextProps.newPost)
     //     }
 
-    //     if(nextProps.deletePost) {
-    //         console.log("nextProps.deletePost")
-    //         this.props.posts.unshift(nextProps.deletePost)
-    //     }
+    //     // if(nextProps.deletePost) {
+    //     //     console.log("nextProps.deletePost")
+    //     //     this.props.posts.unshift(nextProps.deletePost)
+    //     // }
 
     //     console.log("ComponentDidUpdate RAN.")
     // };

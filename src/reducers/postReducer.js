@@ -6,7 +6,6 @@ const initialState = {
 };
 
 const postReducer = (state = initialState, action) => {
-    console.log("postReducer.js is working under reducer folder")
     switch(action.type) {
         case FETCH_POSTS:
             return {

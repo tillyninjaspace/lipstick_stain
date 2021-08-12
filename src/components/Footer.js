@@ -12,11 +12,13 @@ const Footer = ({isChanged, setIsChanged, token, setToken}) => {
     const [openLoginForm, setOpenLoginForm] = useState(false)
 
     const year =  new Date().getFullYear() ;
-console.log("Token Under Footer", token)
+
     return (
         <div className="footer"> 
         
-            <span style={{fontWeight: "bold"}}>&copy;{year} Lipstained Glass</span>
+            <span style={{fontWeight: "bold"}}>&copy;{year} Lipstained Glass
+                (This site is still under development. Reviews are added on an ongoing basis.)
+            </span>
             <p className="footerLinks">
                 <span><a href="/wineries">All Wine Places</a></span>
                 <span><a href="/about">About</a></span>
@@ -27,7 +29,7 @@ console.log("Token Under Footer", token)
                 </p>
             <p>Lipstained Glass was built by the 
                 author using React,
-                PostgresSQL, Node, Express and Cloudinary.
+                PostgresSQL, Node, Express and Multer/Cloudinary.
                 </p>
             <p>All reviews are personal opinions of the author and I encourage you to come
                 with an open mind with wine tasting! Everyone's tastebuds

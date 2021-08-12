@@ -8,15 +8,13 @@ import About from './components/About';
 import Welcome from './components/Welcome';
 import Footer from './components/Footer';
 // import {Provider} from 'react-redux';
-import {BrowserRouter, Route, Link, Switch, NavLink} from 'react-router-dom';
+import {BrowserRouter, Route, Link, NavLink} from 'react-router-dom';
 // import store from './store'
 import { SinglePostPage } from './components/SinglePage';
 import {useSelector, useDispatch} from 'react-redux';
 import {useState, useEffect} from 'react';
 import { fetchPosts } from './actions/postActions';
-// import Updateform from './components/Updateform';
 import headerLogo  from './lipstickstain_logo.gif'
-// import Login from './components/Login';
 
 function App() {
 
@@ -38,7 +36,6 @@ function App() {
   }, [dispatch, isChanged]); 
 
   const paginationItems = useSelector(state => state.posts.items)
-  console.log("Pagination Items", paginationItems)
 
   const indexOfLastPost = currentPage * postsPerPage;
   const indexOfFirstPost = indexOfLastPost - postsPerPage;
@@ -51,27 +48,17 @@ function App() {
     }
   //End NEW for Pagination
 
-  console.log("TOKEN", token)
   return (
     // <Provider store={store}>
     <BrowserRouter>
     <div className="App">
     
       <header className="App-header">
-        {/* <Login token={token} setToken={setToken}/> */}
         {/* <img src={logo} className="App-logo" alt="logo" /> */}
-        {/* <img src={redwine} className="glass" alt="red wine" /> */}
         <p className="bannerHeader">
           <img style={{width: "50px"}}src={headerLogo} alt="Lipstained Glass Logo"/>
           <span className="appName">Lipstained Glass </span>
           <span>Wine Reviews in San Luis Obispo County by a Local</span> 
-          {/* <a style={{textAlign: "center"}}
-          className="App-link"
-          href="https://gracious-mcnulty-e733ac.netlify.app/portfolio.html"
-          target="_blank"
-          rel="noopener noreferrer"
-          >Go to my Portfolio to see completed work
-          </a> */}
         </p>
       </header>
       {/* <Switch> */}
@@ -79,10 +66,7 @@ function App() {
       <NavLink to="/wineries" className="nav">All Wine Places</NavLink>
       <NavLink to="/about" className="nav">About</NavLink>
       <hr></hr>
-      {/* <Route exact path="/"><Postform/><Posts /></Route> */}
-       <Route
-         exact
-      path="/"
+       <Route exact path="/"
 
          render={() => (             
               <>
@@ -94,12 +78,10 @@ function App() {
                   {paginationItems && currentPosts.map(post => (
                     <li key={post.id} className="listItem">
                     <Link to={`/wineries/${post.id}`} className="button muted-button">
-                      <p>{post.id}</p>
+                      {/* <p>{post.id}</p> */}
                       <h3>{post.name}</h3>
                       <p style={{textAlign: 'center'}}><img src={post.productimage} alt="Wine or Winery"/></p>
                     </Link>
-                      
-                      
                     </li>
                   ))
                   }
@@ -113,7 +95,6 @@ function App() {
                     </div>
                 )
                 )}
-                {/* <Updateform isChanged={isChanged} setIsChanged={setIsChanged} /> */}
               </>           
             )}
           />

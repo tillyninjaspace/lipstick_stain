@@ -36,7 +36,7 @@ export const SinglePostPage = () => {
   return (
     
     <section style={{paddingTop: "1em", paddingBottom: "1em"}}>
-      <Link to="/">Back to All Wine Places</Link>
+      <Link to="/wineries">Back to All Wine Places</Link>
       { postList && postList.length > 0  && post?
       <article className="winery">
         <h3>Wine Place ID: {post.id}</h3>
@@ -45,7 +45,7 @@ export const SinglePostPage = () => {
         <p className="post-content">{post.description}</p> 
         <p>Kid-Friendly: {post.active? 'Yes' : 'No'}</p>
         <p>Location: {post.location}</p>
-        {post.link? <a href={post.link} target="_blank" rel="noreferrer">See More Pictures for {post.name}</a>
+        {post.link? <a href={post.link} target="_blank" rel="noreferrer">See More Details or Pictures for {post.name}</a>
           : ''}
       </article>
       :

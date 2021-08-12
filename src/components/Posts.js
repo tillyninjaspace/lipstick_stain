@@ -80,7 +80,7 @@ async onDelete (id) {
         const postItems = this.props.posts.map(
             post => 
             ( <div key={post.id} className="winePlace">
-                <h2>ID: {post.id}</h2>
+                <h3>ID: {post.id}</h3>
                 <h2>{post.name}</h2>
                 <p>{post.description}</p>
                 <img style={{maxWidth: "300px"}} alt="winery or tasting room" src={post.productimage}/>

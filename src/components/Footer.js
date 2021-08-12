@@ -16,7 +16,7 @@ console.log("Token Under Footer", token)
     return (
         <div className="footer"> 
         
-            <span style={{fontWeight: "bold"}}>&copy;{year}LipstainedGlass.com by Ninja Space Content</span>
+            <span style={{fontWeight: "bold"}}>&copy;{year} Lipstained Glass</span>
             <p className="footerLinks">
                 <span><a href="/wineries">All Wine Places</a></span>
                 <span><a href="/about">About</a></span>

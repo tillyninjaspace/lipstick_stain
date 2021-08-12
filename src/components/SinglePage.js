@@ -43,9 +43,10 @@ export const SinglePostPage = () => {
         <img alt='winery' src={post.productimage}/>
         <h2>{post.name}</h2>
         <p className="post-content">{post.description}</p> 
+        <p>Kid-Friendly: {post.active? 'Yes' : 'No'}</p>
         <p>Location: {post.location}</p>
-        <p>Link: {post.link}</p>
-        
+        {post.link? <a href={post.link} target="_blank" rel="noreferrer">See More Pictures for {post.name}</a>
+          : ''}
       </article>
       :
       <p>Nothing to see.</p>
@@ -53,10 +54,4 @@ export const SinglePostPage = () => {
       
     </section>
   )
-}
-
-// export default SinglePostPage;
-
-// const mapStateToProps = state => ({ contacts: state.posts.items })
-
-// export default connect(mapStateToProps)(SinglePostPage);
+};

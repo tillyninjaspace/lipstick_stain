@@ -4,7 +4,7 @@ import React from 'react';
 const About = () => {
 
     return (
-        <div>
+        <div style={{padding: "1em"}}> 
             <h1>About Lipstained Glass Wine Reviews</h1>
             <p>I became a wine enthusiast after moving to the San Luis Obispo (SLO) County area. With hundreds of wineries
                 in the area here surrounded by a lot of farm land, the easy access of getting wine straight from the source 

@@ -2,9 +2,9 @@ import React from 'react';
 
 const Welcome = () => {
     return (
-        <div>
-            <p>I live in San Luis Obipo County and started my wine tasting adventure in 2019 at local tasting rooms
-                and wineries! This emcompasses: Edna Valley, Paso Robles, Arroyo Grande and more.
+        <div style={{padding: "1em"}}>
+            <p>I live in San Luis Obipo County and started my wine tasting adventure at local tasting rooms
+                and wineries when I moved to the Central Coast of California! This encompasses: Edna Valley, Paso Robles, Arroyo Grande and more.
             </p>
             <p>
                 With each taste from my glass, I'd take in the flavors and uniqueness

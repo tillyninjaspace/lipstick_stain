@@ -40,7 +40,7 @@ Follow Us on Instagram &nbsp;
                 author using React,
                 PostgresSQL, Node, Express and Multer/Cloudinary.
                 </p>
-            <p>All reviews are personal opinions of the author and I encourage you to come
+            <p>I encourage you to come
                 with an open mind with wine tasting! Everyone's tastebuds
                 have distinct preferences but preferences can change. All reviews are
                 written as a hobby and not sponsored in any way at this time.

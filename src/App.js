@@ -6,6 +6,7 @@ import './App.css';
 import Posts from './components/Posts';
 import About from './components/About';
 import Welcome from './components/Welcome';
+import Loading from './components/Loading';
 import Footer from './components/Footer';
 // import {Provider} from 'react-redux';
 import {BrowserRouter, Route, Link, NavLink} from 'react-router-dom';
@@ -28,8 +29,9 @@ function App() {
   const dispatch = useDispatch()
 
   useEffect( () => {
+      
       try { 
-         dispatch(fetchPosts())
+        dispatch(fetchPosts())
       } catch {
           throw Error('Error with dispatching')
       } 
@@ -73,6 +75,7 @@ function App() {
               <Welcome />
                {/* <Posts /> */}
                <h1>Select a Wine Place to Read a Review</h1>
+               { paginationItems.length <= 0 ? <Loading/> :
                <ul className="pagination">
 
                   {paginationItems && currentPosts.map(post => (
@@ -86,6 +89,7 @@ function App() {
                   ))
                   }
                </ul>
+                }
                <h5 style={{textAlign: "left", marginBottom: "0px"}}>Go to Page</h5>
                 {pageNumbers.map(number => (
                     <div key={number} className="page" style={{color: "red"}}>

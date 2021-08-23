@@ -1,5 +1,5 @@
 import React from 'react';
-// import HorizontalAd from './HorizontalAd';
+import HorizontalAd from './HorizontalAd';
 
 const About = () => {
 
@@ -44,7 +44,7 @@ const About = () => {
            
 
 {/* Adsense */}
-            {/* <HorizontalAd/> */}
+            <HorizontalAd/>
 {/* End Adsense */}
 
         </div>

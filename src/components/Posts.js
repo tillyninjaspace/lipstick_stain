@@ -25,8 +25,18 @@ class Posts extends Component {
         //     console.log("nextProps.deletePost")
         //     this.props.posts.unshift(nextProps.deletePost)
         // }
-    }
+    };
 //end Working
+
+//Using 8/17/2021 componentdDidUdpate to replace componentWillReceiveProps
+// componentDidUpdate(prevProps, prevState ) {
+//     if (this.props.newPost !== prevProps.newPost) {
+//     //   logVisibleChange(this.props.isVisible);
+//     this.props.posts.unshift(this.props.newPost)
+//     }
+//   }
+
+//end
 
 //NEW Not Working but this be needed for new React 17 >>> trying replacement of componentWillReceive Props
     // componentDidUpdate(newPost, deletePost) {

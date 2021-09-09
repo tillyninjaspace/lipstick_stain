@@ -93,7 +93,7 @@ async onDelete (id) {
                 <h3>ID: {post.id}</h3>
                 <h2>{post.name}</h2>
                 <p>{post.description}</p>
-                <img style={{maxWidth: "300px"}} alt="winery or tasting room" src={post.productimage}/>
+                <img style={{maxHeight: '300px', maxWidth: "300px", objectFit: "cover"}} alt={post.name + ' Picture in SLO County'} src={post.productimage}/>
                 <Link to={`/wineries/${post.id}`} className="button muted-button">
                     View More Details
                 </Link>

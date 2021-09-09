@@ -67,6 +67,17 @@
   margin: 30px;
 }
 
+/* .winePlace img {
+  transition: transform .2s;
+} */
+
+.winePlace img:hover {
+  transform: scale(1.5);
+  border:3px inset rgb(219, 228, 238);
+  position: relative;
+  bottom: 100px;
+}
+
 .winery {
   display: flex;
   flex-direction: column;

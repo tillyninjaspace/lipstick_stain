@@ -2,7 +2,7 @@ import React, {useEffect} from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import {useParams, Link } from 'react-router-dom';
 import { fetchPosts } from '../actions/postActions';
-
+import giflogo from '../lipstickstain_logo.gif'
 
 export const SinglePostPage = () => {
   
@@ -49,7 +49,9 @@ export const SinglePostPage = () => {
           : ''}
       </article>
       :
-      <p>Nothing to see.</p>
+      <p>Please be patient as we're querying the database...
+      <img src={giflogo} style={{maxWidth: "100px"}} alt="logo" />
+      </p>
       } 
       
     </section>

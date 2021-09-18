@@ -297,4 +297,8 @@ a {
   /* .App:focus-within .topNav{
     display: block;
   } */
+
+  .winery img {
+    max-width: 270px;
+  }
 }

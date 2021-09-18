@@ -35,10 +35,12 @@ const About = () => {
             <ul>
             Ideas for Picnic Sets:
                 <li>
-                <a target="_blank" rel="noreferrer" href="https://www.amazon.com/gp/product/B01MSUEJ5Y/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B01MSUEJ5Y&linkCode=as2&tag=pacificbeach-20&linkId=87454d43b16ea1d4e673b98930aefbbe">Plush Picnic - Wine Carrier Picnic Set, Durable Wine Cooler Bag with Glasses, Wine Cheese Tote for Couples, Picnic Bag for 2, Men’s &amp; Women's Gift, Picnic Accessories Included-Black</a>
+                <a target="_blank" href="https://www.amazon.com/gp/product/B08P2ZLW6N/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B08P2ZLW6N&linkCode=as2&tag=lipstickstained-20&linkId=11885292784e9d0844ea6e485ace4eb5">SatisInside Picnic Basket for 2 Wicker Picnic Set with Insulated Liner for Camping,Wedding,Valentine Day,Gift - Reinforced Handle, Grey</a>
+                
                 </li>
                 <li>
-                <a target="_blank" rel="noreferrer" href="https://www.amazon.com/gp/product/B093SY11GH/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B093SY11GH&linkCode=as2&tag=slomom-20&linkId=385a0e53f85c4b9a207b9e93982ecda8">Greenstell Wicker Picnic Basket Sets for 4 Persons with High Sealing Insulation Layer,Waterproof Picnic Mat, Removable Strap and Wine Bag, Tableware, Picnic Basket for Family,Party,Outdoor,Camping</a>
+                <a target="_blank" href="https://www.amazon.com/gp/product/B08BL8P8TS/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B08BL8P8TS&linkCode=as2&tag=lipstickstained-20&linkId=3b31bfe5a7b174fe3b569e94c1a534db">Red Wine Glasses Set of 4- Premium Crystal Wine Glasses Hand Blown-15 oz,Thin Rim,Long Stem,Perfect for Red or White,Daily Use,Unique Wedding Anniversary or Birthday Gift</a>
+                
                 </li>
             </ul>
            

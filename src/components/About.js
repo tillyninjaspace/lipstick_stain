@@ -11,7 +11,10 @@ const About = () => {
                 in this environment is a gift so I started an adventure of wine tasting. At first, I wasn't sure if I'd fit in as a stay at home mom who 
                 is usually in casual wear. I went to my first winery with an expectation that it was going
                 to be mainly the rich and fancy wearing nice al fits that go wine tasting; like the places I visited in Napa Valley.
-                It is not like that here on a normal week day but you will find special groups or bachelor/bachelorette parties who do come dressed well.
+                It is not like that here on a normal week day but you will find special groups or bachelor/
+                <a target="_blank" href="https://www.amazon.com/gp/search?ie=UTF8&tag=lipstickstained-20&linkCode=ur2&linkId=08771253e83fcef5317008a5ed91883d&camp=1789&creative=9325&index=arts-crafts&keywords=bachelorette parties">bachelorette parties</a>
+                &nbsp;
+                who do come dressed well.
                 Tastings are half the prices of the wineries in Napa Valley and the grapes that are used to make
                 the wine are grown and produced here. Some of these wines are renowned award winners!
             </p>
@@ -48,6 +51,16 @@ const About = () => {
 {/* Adsense */}
             {/* <HorizontalAd/> */}
 {/* End Adsense */}
+
+<script type="text/javascript">
+      amzn_assoc_ad_type = "link_enhancement_widget";
+      amzn_assoc_tracking_id = "lipstickstained-20";
+      amzn_assoc_linkid = "c16b5810f381d741b74332133931ede6";
+      amzn_assoc_placement = "";
+      amzn_assoc_marketplace = "amazon";
+      amzn_assoc_region = "US";
+  </script>
+  <script src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&Operation=GetScript&ID=OneJS&WS=1&MarketPlace=US"></script>
 
         </div>
     )

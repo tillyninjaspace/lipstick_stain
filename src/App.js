@@ -85,7 +85,7 @@ function App() {
       <section className="topNav">
       <NavLink to="/" className="nav">Home</NavLink>
       <NavLink to="/wineries" className="nav">All Wine Places</NavLink>
-      <NavLink to="/edna-valley-and-paso-robles-wineries" className="nav">Edna Valley &amp; Locations</NavLink>
+      <NavLink to="/edna-valley-and-paso-robles-wineries" className="nav">Edna Valley &amp; Paso Robles Locations</NavLink>
       <NavLink to="/about" className="nav">About</NavLink>
       </section>
       <hr></hr>

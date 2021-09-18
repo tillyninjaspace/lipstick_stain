@@ -266,7 +266,7 @@ a {
 }
 
 .babyNav:nth-child(odd) {
-  border: 1px solid black;
+  border: 1px dotted rgb(96, 94, 94);
   border-radius: 7px;
 }
 

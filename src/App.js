@@ -15,12 +15,14 @@ import { SinglePostPage } from './components/SinglePage';
 import {useSelector, useDispatch} from 'react-redux';
 import {useState, useEffect} from 'react';
 import { fetchPosts } from './actions/postActions';
-import headerLogo  from './lipstickstain_logo.gif'
+import headerLogo  from './lipstickstain_logo.gif';
+import ByLocation from './components/ByLocation';
 
 function App() {
 
   const [isChanged, setIsChanged] = useState(false)
   const [token, setToken] = useState('');
+  const [isNavOpen, setIsNavOpen] = useState(false)
 
   //NEW for Pagination
   const [currentPage, setCurrentPage] = useState(1);
@@ -64,9 +66,28 @@ function App() {
         </p>
       </header>
       {/* <Switch> */}
+
+      
+      <button className="navButton"
+        onClick={() => isNavOpen? setIsNavOpen(false) : setIsNavOpen(true)}
+      >MENU</button>
+
+      {isNavOpen? 
+      <section className="babyNav">
+          <NavLink to="/">Home</NavLink>
+          <NavLink to="/wineries">All Wine Places</NavLink>
+          <NavLink to="/edna-valley-and-paso-robles-wineries">Edna Valley &amp; Paso Robles Locations</NavLink>
+          <NavLink to="/about">About</NavLink>
+      </section>
+      :
+      ''
+      } 
+      <section className="topNav">
       <NavLink to="/" className="nav">Home</NavLink>
       <NavLink to="/wineries" className="nav">All Wine Places</NavLink>
+      <NavLink to="/edna-valley-and-paso-robles-wineries" className="nav">Edna Valley &amp; Locations</NavLink>
       <NavLink to="/about" className="nav">About</NavLink>
+      </section>
       <hr></hr>
        <Route exact path="/"
 
@@ -107,7 +128,7 @@ function App() {
       <Route path="/about"><About/></Route>
       <Route exact path="/wineries"><Posts/></Route>
       <Route exact path="/wineries/:postId" component = {SinglePostPage}/>
-      
+      <Route path="/edna-valley-and-paso-robles-wineries"><ByLocation/></Route>
       {/* </Switch> */}
       {/* <Redirect to="/" /> */}
       <Footer isChanged={isChanged} setIsChanged={setIsChanged} token={token} setToken={setToken}/>

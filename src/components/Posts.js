@@ -90,13 +90,14 @@ async onDelete (id) {
         const postItems = this.props.posts.map(
             post => 
             ( <div key={post.id} className="winePlace">
-                <h3>ID: {post.id}</h3>
                 <h2>{post.name}</h2>
                 <p>{post.description}</p>
-                <img style={{maxHeight: '300px', maxWidth: "300px", objectFit: "cover"}} alt={post.name + ' Picture in SLO County'} src={post.productimage}/>
+                
                 <Link to={`/wineries/${post.id}`} className="button muted-button">
+                <img style={{maxHeight: '300px', maxWidth: "220px"}} alt={post.name + ' Picture in SLO County'} src={post.productimage}/>
                     View More Details
                 </Link>
+                <p>ID: {post.id}</p>
                 <p>Kid-Friendly: {post.active? 'Yes' : 'No'}</p>
                 <p>Location: {post.location}</p>
             </div>)

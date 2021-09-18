@@ -72,10 +72,11 @@
 } */
 
 .winePlace img:hover {
-  transform: scale(1.5);
+  transform: scale(1.3);
   border:3px inset rgb(219, 228, 238);
   position: relative;
   bottom: 100px;
+  right: 13px;
 }
 
 .winery {
@@ -89,7 +90,7 @@
 }
 
 .winery img {
-  max-width:300px;
+  max-width:400px;
 }
 
 .deleteButton {
@@ -199,20 +200,6 @@ a {
   font-size: 2em;
 }
 
-@media only screen and (max-width: 600px) {
-  .nav {
-    font-size: 1.25em;
-  }
-
-  .listItem {
-    width: 200px;
-  }
-
-  .listItem img {
-    max-width: 155px;
-  }
-}
-
 .login form{
   background-color: black;
   display: flex;
@@ -252,4 +239,62 @@ a {
   border-radius: 7px;
   margin: 5px;
   background-color: rgb(169, 43, 43);
+}
+
+.byLocation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.byLocation li{
+  padding-bottom: 1em;
+}
+
+.navButton {
+  display: none;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.babyNav {
+  color: pink;
+  flex-direction: column;
+  align-items: center;
+  display: none;
+  margin-top:.5em;
+  padding: .5em;
+}
+
+.babyNav:nth-child(odd) {
+  border: 1px solid black;
+  border-radius: 7px;
+}
+
+@media only screen and (max-width: 600px) {
+  .nav {
+    font-size: 1.25em;
+  }
+
+  .listItem {
+    width: 200px;
+  }
+
+  .listItem img {
+    max-width: 155px;
+  }
+
+  .navButton {
+    display: block;
+  }
+
+  .App .topNav {
+    display:none;
+  }
+
+  .babyNav{
+    display: flex;
+  }
+  /* .App:focus-within .topNav{
+    display: block;
+  } */
 }

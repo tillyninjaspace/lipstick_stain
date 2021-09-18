@@ -17,7 +17,7 @@ const Footer = ({isChanged, setIsChanged, token, setToken}) => {
         <div className="footer"> 
         
             <span style={{fontWeight: "bold"}}>&copy;{year} Lipstained Glass
-                (This site is still under development. Reviews are added on an ongoing basis.)
+                (Under development. Reviews are added on an ongoing basis.)
             </span>
 <p style={{textAlign: "center"}}>
 <a style={{color: "white", textDecoration: "none", fontWeight: "bolder", backgroundColor: "rgb(210, 93, 113)", padding: ".5em",

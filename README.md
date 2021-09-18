@@ -1,6 +1,6 @@
 # Create React App: Lipstained Glass (Under Development)
 ## Developer: Tilly Wright
-Lipstained Glass' is live and deployed on Netlify with custom domain: https://lipstainedglass.com
+Lipstained Glass is live and deployed on Netlify with custom domain: https://lipstainedglass.com
 
 To see my completed projects, go to my portfolio website: https://gracious-mcnulty-e733ac.netlify.app/portfolio.html
 

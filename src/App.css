@@ -328,4 +328,8 @@ a {
   .winery img {
     max-width: 270px;
   }
+
+  .byLocation {
+    flex-direction: column;
+  }
 }

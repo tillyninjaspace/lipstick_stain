@@ -62,7 +62,7 @@ function App() {
         <p className="bannerHeader">
           <img style={{width: "50px"}}src={headerLogo} alt="Lipstained Glass Logo"/>
           <span className="appName">Lipstained Glass </span>
-          <span>Wine Reviews in San Luis Obispo County by a Local</span> 
+          <span>Winery Reviews in San Luis Obispo County by a Local</span> 
         </p>
       </header>
       {/* <Switch> */}

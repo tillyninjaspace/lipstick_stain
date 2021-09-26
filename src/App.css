@@ -247,13 +247,30 @@ a {
 }
 
 .byLocation li{
-  padding-bottom: 1em;
+  margin-bottom: 1em;
+  background-color: rgb(51, 59, 66);
+  border-radius: 7px;
+  padding: .5em;
+}
+
+.byLocation a{
+  color: white;
+  font-size: 1.2em;
+}
+
+.byLocation a:hover, .nav:hover {
+  color: rgb(210, 93, 113);
 }
 
 .navButton {
   display: none;
-  background-color: white;
+  background-color: rgb(51, 59, 66);
   border-radius: 5px;
+  color: white;
+}
+
+.navButton:hover{
+  color:rgb(52, 128, 172);
 }
 
 .babyNav {
@@ -263,11 +280,21 @@ a {
   display: none;
   margin-top:.5em;
   padding: .5em;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+.babyNav a:hover {
+  color: rgb(51, 59, 66);
 }
 
 .babyNav:nth-child(odd) {
   border: 1px dotted rgb(96, 94, 94);
   border-radius: 7px;
+}
+
+.socialMedia:hover {
+  color:rgb(51, 59, 66);
 }
 
 @media only screen and (max-width: 600px) {

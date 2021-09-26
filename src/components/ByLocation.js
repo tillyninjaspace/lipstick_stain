@@ -25,6 +25,8 @@ const ByLocation = () => {
                     <li><a href="/wineries/13" title="Calcareous Winery Review">Calcareous Winery</a></li>
                     <li><a href="/wineries/16" title="Pear Valley Estate Wines Review">Pear Valley Estate Wines</a></li>
                     <li><a href="/wineries/17" title="Steinbeck Vineyards Review">Steinbeck Vineyards &amp; Winery</a></li>
+                    <li><a href="/wineries/21" title="Rave Wines Review">Rava Wines</a></li>
+                    <li><a href="/wineries/22" title="Cass Winery Review">Cass Winery</a></li>
                 </ul>
                 <ul>
                     <h3>

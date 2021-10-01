@@ -35,7 +35,7 @@ export const SinglePostPage = () => {
 
   return (
     
-    <section style={{paddingTop: "1em", paddingBottom: "1em"}}>
+    <section style={{paddingTop: ".5em", paddingBottom: ".5em"}}>
       <Link to="/wineries">Back to All Wine Places</Link>
       { postList && postList.length > 0  && post?
       <article className="winery">

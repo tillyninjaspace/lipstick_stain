@@ -19,7 +19,7 @@ const Footer = ({isChanged, setIsChanged, token, setToken}) => {
             <span style={{fontWeight: "bold"}}>&copy;{year} Lipstained Glass
                 (Under development. Reviews are added on an ongoing basis.)
             </span>
-<p style={{textAlign: "center"}}>
+<p style={{textAlign: "center", paddingTop: ".75em", paddingBottom: ".5em"}}>
 <a  style={{color: "white", textDecoration: "none", fontWeight: "bolder", backgroundColor: "rgb(210, 93, 113)", padding: ".5em",
     borderRadius: "7px"}} 
 href="https://www.instagram.com/lipstainedglass/" target="_blank" rel="noreferrer" alt="Instagram">

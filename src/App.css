@@ -297,6 +297,11 @@ a {
   color:rgb(51, 59, 66);
 }
 
+.wineName , a {
+  text-decoration-color: rgb(96, 94, 94);
+  color:rgb(96, 94, 94)
+}
+
 @media only screen and (max-width: 600px) {
   .nav {
     font-size: 1.25em;

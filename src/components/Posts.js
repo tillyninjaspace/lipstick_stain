@@ -90,7 +90,7 @@ async onDelete (id) {
         const postItems = this.props.posts.map(
             post => 
             ( <div key={post.id} className="winePlace">
-                <h2>{post.name}</h2>
+                <h2><Link to={`/wineries/${post.id}`} className="button muted-button wineName">{post.name}</Link></h2>
                 <p>{post.description}</p>
                 
                 <Link to={`/wineries/${post.id}`} className="button muted-button">

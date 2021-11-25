@@ -103,7 +103,7 @@ function App() {
                     <li key={post.id} className="listItem">
                     <Link to={`/wineries/${post.id}`} className="button muted-button">
                       {/* <p>{post.id}</p> */}
-                      <h3>{post.name}</h3>
+                      <h3 className="wineName">{post.name}</h3>
                       <p style={{textAlign: 'center'}}><img src={post.productimage} alt="Wine or Winery"/></p>
                     </Link>
                     </li>

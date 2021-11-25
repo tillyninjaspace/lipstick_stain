@@ -27,6 +27,8 @@ const ByLocation = () => {
                     <li><a href="/wineries/17" title="Steinbeck Vineyards Review">Steinbeck Vineyards &amp; Winery</a></li>
                     <li><a href="/wineries/21" title="Rave Wines Review">Rava Wines</a></li>
                     <li><a href="/wineries/22" title="Cass Winery Review">Cass Winery</a></li>
+                    <li><a href="/wineries/24" title="Ecluse Wines">Ecluse Wines</a></li>
+                    <li><a href="/wineries/25" title="Opolo Vineyards during the holidays">Opolo Vineyards</a></li>
                 </ul>
                 <ul>
                     <h3>
@@ -38,6 +40,7 @@ const ByLocation = () => {
                     <li><a href="/wineries/14" title="Laetitia Vineyard &amp; Winery Review">Laetitia Vineyard &amp; Winery</a></li>
                     <li><a href="/wineries/20" title="Ancient Peaks Winery Review">Ancient Peaks Winery</a></li>
                     <li><a href="/wineries/3" title="Kelsey See Canyon with Peacocks Review">Kelsey See Canyon Vineyards</a></li>
+                    <li><a href="/wineries/23" title="Castoro Cellars Review">Castoro Cellars</a></li>
                 </ul>
             </section>
         </div>

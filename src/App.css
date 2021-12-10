@@ -99,15 +99,9 @@
 }
 
 .nav {
-  /* display: flex;
-  flex-direction: column; */
-  /* padding-right: 1em; */
   margin: 200px 20px 0px 0px;
   color: rgb(51, 59, 66);
   padding: 5px;
-  /* margin-top: 8px; */
-  /* color: white; */
-  /* border: 1px solid rgb(11, 13, 155); */
   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   letter-spacing: .05em;
   text-decoration: none;
@@ -144,12 +138,16 @@
 
 .bannerHeader {
   max-width: 600px;
-  text-align: left;
+  text-align: center;
   background-color: rgb(210, 93, 113);
   padding: 1em;
   overflow-wrap: anywhere;
   display: flex;
   flex-direction: column;
+}
+
+.bannerHeader > img {
+  width: 50px;
 }
 
 .pagination {

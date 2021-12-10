@@ -15,8 +15,9 @@ import { SinglePostPage } from './components/SinglePage';
 import {useSelector, useDispatch} from 'react-redux';
 import {useState, useEffect} from 'react';
 import { fetchPosts } from './actions/postActions';
-import headerLogo  from './lipstickstain_logo.gif';
+// import headerLogo  from './lipstickstain_logo.gif';
 import ByLocation from './components/ByLocation';
+import headerLogo from './l_dark_logo.png';
 
 function App() {
 
@@ -60,7 +61,7 @@ function App() {
       <header className="App-header">
         {/* <img src={logo} className="App-logo" alt="logo" /> */}
         <p className="bannerHeader">
-          <img style={{width: "50px"}}src={headerLogo} alt="Lipstained Glass Logo"/>
+          <img src={headerLogo} alt="Lipstained Glass Logo"/>
           <span className="appName">Lipstained Glass </span>
           <span>Winery Reviews in San Luis Obispo County by a Local</span> 
         </p>

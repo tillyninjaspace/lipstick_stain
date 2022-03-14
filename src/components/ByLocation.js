@@ -14,6 +14,7 @@ const ByLocation = () => {
                     <li><a href="wineries/7" title="Baileyana Tasting Room Review">Baileyana, Tangent and Truth Myth Tasting Room</a></li>
                     <li><a href="wineries/8" title="Autry Cellars Review">Autry Cellars</a></li>
                     <li><a href="wineries/9" title="Wolff Winery Review">Wolff Winery</a></li>
+                    <li><a href="wineries/26" title="Saucelito Canyon Vineyard Review">Saucelito Canyon Vineyard</a></li>
                 </ul>
                 <ul>
                     <h3>Paso Robles Wineries</h3>

@@ -109,11 +109,8 @@
 }
 
 .footer {
-  /* background-color: rgb(250, 208, 131); */
   background-color:rgb(51, 59, 66);
   color: white;
-  /* font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  letter-spacing: .05em; */
   font-size: 1em;
   padding: 1em;
   min-height: 10em;
@@ -132,7 +129,6 @@
 }
 
 .glass {
-  /* height: 500px; */
   width: 100%;
 }
 
@@ -186,7 +182,6 @@
 h1, h2, h3, h4, h5 {
   text-align: center;
   color: rgb(51, 59, 66);
-  /* font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
 }
 
 a {
@@ -298,6 +293,12 @@ a {
 .wineName , a {
   text-decoration-color: rgb(96, 94, 94);
   color:rgb(96, 94, 94)
+}
+
+.footerButton {
+  background-color: #000000;
+  border-radius: 3px;
+  padding: .75em;
 }
 
 @media only screen and (max-width: 600px) {

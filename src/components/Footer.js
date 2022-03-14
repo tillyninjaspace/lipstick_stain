@@ -17,7 +17,6 @@ const Footer = ({isChanged, setIsChanged, token, setToken}) => {
         <div className="footer"> 
         
             <span style={{fontWeight: "bold"}}>&copy;{year} Lipstained Glass
-                (Under development. Reviews are added on an ongoing basis.)
             </span>
 <p style={{textAlign: "center", paddingTop: ".75em", paddingBottom: ".5em"}}>
 <a  style={{color: "white", textDecoration: "none", fontWeight: "bolder", backgroundColor: "rgb(210, 93, 113)", padding: ".5em",
@@ -29,8 +28,8 @@ href="https://www.instagram.com/lipstainedglass/" target="_blank" rel="noreferre
 </svg></a>
 </p>
             <p className="footerLinks">
-                <span><a href="/wineries">All Wine Places</a></span>
-                <span><a href="/about">About</a></span>
+                <span class="footerButton"><a href="/wineries">All Wine Places</a></span>
+                <span class="footerButton"><a href="/about">About</a></span>
 
                { token ? 
                 <span><button onClick={() => setOpenPostform(!openPostform)}>Admin</button></span>
@@ -43,7 +42,7 @@ href="https://www.instagram.com/lipstainedglass/" target="_blank" rel="noreferre
             <p>I encourage you to come
                 with an open mind with wine tasting! Everyone's tastebuds
                 have distinct preferences but preferences can change. All reviews are
-                written as a hobby and not sponsored in any way at this time.
+                written as a hobby.
                 Thank you for visiting.
                 </p>
             <button onClick={()=>{setOpenLoginForm(!openLoginForm)}}>Lipstained Glass Admin</button>    

@@ -1,11 +1,14 @@
 import React from 'react';
+import SearchBar from './SearchBar';
 
 const ByLocation = () => {
 
     return (
         <div>
+             
             <h1>Wineries and Tasting Rooms by Location</h1>
             <section className="byLocation">
+            <div><SearchBar/></div>  
                 <ul>
                     <h3>Edna Valley Wineries</h3>
                     <li><a href="wineries/" title="Edna Valley Winery Review">Edna Valley Winery</a></li>
@@ -44,6 +47,7 @@ const ByLocation = () => {
                     <li><a href="/wineries/23" title="Castoro Cellars Review">Castoro Cellars</a></li>
                 </ul>
             </section>
+               
         </div>
     )
 };

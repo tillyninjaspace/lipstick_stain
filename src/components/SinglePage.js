@@ -29,10 +29,7 @@ export const SinglePostPage = () => {
       </section>
     )
   }
-
-  // console.log("What is the selected postList?", postList,
-  // "What's the Post ITEM", post)
-
+  
   return (
     
     <section style={{paddingTop: ".5em", paddingBottom: ".5em"}}>
@@ -49,8 +46,8 @@ export const SinglePostPage = () => {
           : ''}
       </article>
       :
-      <p>Please be patient as we're querying the database...
-      <img src={giflogo} style={{maxWidth: "100px"}} alt="logo" />
+      <p style={{textAlign: "center"}}>Please be patient as we're querying the database...
+      <img src={giflogo} style={{maxWidth: "100px"}} alt="Lipstickstained logo" />
       </p>
       } 
       

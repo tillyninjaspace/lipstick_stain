@@ -301,6 +301,28 @@ a {
   padding: .75em;
 }
 
+.searchResults {
+  text-align: center;
+  border: 2px solid #000000;
+  border-radius: 3px;
+  padding: 1em;
+  min-width: 300px;
+}
+
+.searchResults a {
+  color:rgb(255, 255, 255);
+  background-color:rgb(210, 93, 113);
+  padding: .25em;
+  line-height: 200%;
+  border-radius: 7px;
+  text-decoration: none;
+  text-align: left;
+}
+
+.searchResults a:hover {
+  color:rgb(51, 59, 66);
+}
+
 @media only screen and (max-width: 600px) {
   .nav {
     font-size: 1.25em;

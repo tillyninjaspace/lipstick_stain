@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { fetchPosts, deletePost } from '../actions/postActions';
 import Loading from './Loading';
-// import Postform from './Postform';
+
 
 class Posts extends Component {
 
@@ -86,7 +86,7 @@ async onDelete (id) {
     }
 };
     render() {
-    
+
         const postItems = this.props.posts.map(
             post => 
             ( <div key={post.id} className="winePlace">
@@ -104,13 +104,12 @@ async onDelete (id) {
             )
           
 
-        return (
-            <div>
-                {/* <Postform/> */}
+        return (  
+            <>
                 <h1>Lipstained Glass' Visited Wineries</h1>
                 {postItems.length === 0? <Loading /> : <h3>There are {postItems.length} Visited Wineries or Tasting Rooms</h3>}
                 <div className="winePlaces">{postItems.length > 0 ? postItems : <p>Thank you for your patience as we're querying the database.</p> }</div>
-            </div>
+            </>
         )
     }
 };

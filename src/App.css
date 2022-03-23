@@ -126,6 +126,12 @@
 
 .footerLinks a{
   color: white;
+  text-decoration-color: white;
+}
+
+.footerLinks a:hover {
+  color:rgb(210, 93, 113);
+  text-decoration: none;
 }
 
 .glass {

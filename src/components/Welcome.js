@@ -14,7 +14,7 @@ const Welcome = () => {
                 see all of my personal reviews or select a winery or tasting room below.
             </p>
             <p>
-                Please drink responsibly and take an uber when it's unsafe to drive.
+                Please drink responsibly and use a transportation service when it's unsafe to drive.
             </p>
            
         </div>

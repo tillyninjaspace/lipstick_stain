@@ -35,7 +35,7 @@ const SearchBar = () => {
             }).map((product) => 
                     <div>
                         <a href={`http://lipstainedglass.com/wineries/${product.id}`}>
-                        {product.name}
+                        {product.name} <span className="learnMoreLink">Click to learn more</span>
                         </a>
                     </div>
             )}

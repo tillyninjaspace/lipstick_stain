@@ -259,6 +259,7 @@ a {
 
 .byLocation a:hover, .nav:hover {
   color: rgb(210, 93, 113);
+  text-decoration: none;
 }
 
 .navButton {
@@ -309,7 +310,7 @@ a {
 
 .searchResults {
   text-align: center;
-  border: 2px solid #000000;
+  border: 2px double rgb(51, 59, 66);
   border-radius: 3px;
   padding: 1em;
   min-width: 300px;
@@ -327,6 +328,23 @@ a {
 
 .searchResults a:hover {
   color:rgb(51, 59, 66);
+}
+
+.aboutSection a:hover, .aboutSection li:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(210, 93, 113);
+  border-radius: 3px;
+  padding: .15em;
+  text-decoration: none;
+}
+
+.learnMoreLink {
+  font-size: .5em;
+  border:1px solid rgb(51, 59, 66);
+  padding: .2em;
+  border-radius: 3px;
+  position: relative;
+  bottom: .3em;
 }
 
 @media only screen and (max-width: 600px) {

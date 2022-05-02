@@ -5,7 +5,7 @@ const About = () => {
 
     return (
         <>
-        <div style={{padding: "1em"}}> 
+        <div className="aboutSection" style={{padding: "1em"}}> 
             <h1>About Lipstained Glass Wine Reviews</h1>
             <p>I became a wine enthusiast after moving to the San Luis Obispo (SLO) County area. With hundreds of wineries
                 in the area here surrounded by a lot of farm land, the easy access of getting wine straight from the source 
@@ -13,10 +13,11 @@ const About = () => {
                 to be mainly the rich or fancy wearing nice al fits that go wine tasting; like the places I visited in Napa Valley.
                 It is not like that here on a normal week day but you will find special groups or bachelor/
                 <a target="_blank" href="https://www.amazon.com/gp/search?ie=UTF8&tag=lipstickstained-20&linkCode=ur2&linkId=08771253e83fcef5317008a5ed91883d&camp=1789&creative=9325&index=arts-crafts&keywords=bachelorette parties">bachelorette parties</a>
-                &nbsp;
-                who do come dressed well.
+                &nbsp;who do come dressed well.
                 Tastings are half the prices of the wineries in Napa Valley and the grapes that are used to make
-                the wine are grown and produced here. Some of these wines are renowned award winners!
+                the wine are grown and produced here. Some of these wines are renowned award winners! <a href=
+                "https://www.instagram.com/sanluisobispomom/" target="_blank" rel="noreferrer" title="San LUis Obispo Instagram">See a local 
+                San Luis Obispo County instagram to see recent local pictures.</a>
             </p>
             <p>There is a unique culture here. It's laid back like where I grew up but much more rural with 
                 beautiful hills and beaches that just all exist in one county. Sometimes I'd be at the beach and see both
@@ -32,18 +33,17 @@ const About = () => {
                 here and it's oh so beautiful! Homes are still expensive but still notably less than homes in Southern California
                 and Northen California.
             </p>
-            <p>To learn more about &nbsp;
-                <a href="http://sanluisobispomom.com" target="_blank" rel="noreferrer" title="local SLO blogger">San Luis Obispo County</a></p>
+            <p>To learn more about SLO (San Luis Obispo), go to:&nbsp;
+                <a href="http://sanluisobispomom.com" target="_blank" rel="noreferrer" title="Local SLO blogger">San Luis Obispo County Blog</a>.</p>
   
             <ul>
-            Ideas for Picnic Sets:
+            <strong>Ideas for Picnic Sets:</strong>
                 <li>
                 <a target="_blank" href="https://www.amazon.com/gp/product/B08P2ZLW6N/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B08P2ZLW6N&linkCode=as2&tag=lipstickstained-20&linkId=11885292784e9d0844ea6e485ace4eb5">SatisInside Picnic Basket for 2 Wicker Picnic Set with Insulated Liner for Camping,Wedding,Valentine Day,Gift - Reinforced Handle, Grey</a>
                 
                 </li>
                 <li>
                 <a target="_blank" href="https://www.amazon.com/gp/product/B08BL8P8TS/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B08BL8P8TS&linkCode=as2&tag=lipstickstained-20&linkId=3b31bfe5a7b174fe3b569e94c1a534db">Red Wine Glasses Set of 4- Premium Crystal Wine Glasses Hand Blown-15 oz,Thin Rim,Long Stem,Perfect for Red or White,Daily Use,Unique Wedding Anniversary or Birthday Gift</a>
-                
                 </li>
             </ul>
            
@@ -65,7 +65,8 @@ const About = () => {
         <div style={{textAlign: "center"}}>
         <iframe style={{width:"120px", height: "240px"}} title="Wine Bottle Coaster" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=slomom-20&language=en_US&marketplace=amazon&region=US&placement=B07MZR42X4&asins=B07MZR42X4&linkId=eb10f635cd89e22ff7c1c0bf2a8ce12a&show_border=true&link_opens_in_new_window=true"></iframe>
         <iframe style={{width: "120px", height:"240px"}} title="Coasters" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=slomom-20&language=en_US&marketplace=amazon&region=US&placement=B086BZTHY7&asins=B086BZTHY7&linkId=b13964cb247375932794cbb9b18fb5d5&show_border=true&link_opens_in_new_window=true"></iframe>
-        <iframe style={{width: "120px", height: "240px"}} title="Wine Coasters" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=slomom-20&language=en_US&marketplace=amazon&region=US&placement=B077B3P2L8&asins=B077B3P2L8&linkId=8da200dd4de707e1b5fc94be63768553&show_border=true&link_opens_in_new_window=true"></iframe>
+        <iframe sandbox="allow-popups allow-scripts allow-modals allow-forms allow-same-origin" style={{width:"120px", height:"240px"}} title="Etched Stainless Glass Copper Wine Glasses" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=lipstickstained-20&language=en_US&marketplace=amazon&region=US&placement=B07XQ6M89Y&asins=B07XQ6M89Y&linkId=acc730e1725eeb64e0dc26a219e03ab5&show_border=true&link_opens_in_new_window=true"></iframe>
+        <iframe sandbox="allow-popups allow-scripts allow-modals allow-forms allow-same-origin" style={{width:"120px", height:"240px"}} title="Copper Wine Glasses" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=lipstickstained-20&language=en_US&marketplace=amazon&region=US&placement=B092M7L75W&asins=B092M7L75W&linkId=2de4a9232fcb5146c4fe15911edebb67&show_border=true&link_opens_in_new_window=true"></iframe>
         </div>
         </>
     )

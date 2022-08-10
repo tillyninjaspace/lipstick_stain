@@ -335,7 +335,26 @@ a {
   background-color: rgb(210, 93, 113);
   border-radius: 3px;
   padding: .15em;
+  text-decoration: none!important;
+}
+
+li .wineName:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(210, 93, 113);
+  border-radius: 3px;
+  padding: .15em;
+}
+
+li a:hover {
   text-decoration: none;
+}
+
+.welcomeMessage:hover {
+  background-color: rgb(210, 93, 113);
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 2px;
 }
 
 .learnMoreLink {
@@ -345,6 +364,8 @@ a {
   border-radius: 3px;
   position: relative;
   bottom: .3em;
+  background-color: white;
+  color: black;
 }
 
 @media only screen and (max-width: 600px) {

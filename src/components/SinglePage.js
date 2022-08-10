@@ -40,9 +40,9 @@ export const SinglePostPage = () => {
         <p>Wine Place ID: {post.id}</p>
         <img alt='winery' src={post.productimage}/>
         <p className="post-content">{post.description}</p> 
-        <p>Kid-Friendly: {post.active? 'Yes' : 'No'}</p>
-        <p>Location: {post.location}</p>
-        {post.link? <a href={post.link} target="_blank" rel="noreferrer">See More Details or Pictures for {post.name}</a>
+        <p><span style={{fontWeight: "bold"}}>Kid-Friendly:</span> {post.active? 'Yes' : 'No'}</p>
+        <p><span style={{fontWeight: "bold"}}>Location:</span> {post.location}</p>
+        {post.link? <a href={post.link} target="_blank" rel="noreferrer">More Details or Pictures for {post.name}</a>
           : ''}
       </article>
       :

@@ -8,7 +8,7 @@ const Welcome = () => {
             </p>
             <p>
                 With each taste from my glass, I'd take in the flavors and uniqueness
-                of each winery and tasting room and write my opinions here. See my <a href="/wineries"
+                of each winery and tasting room and write my opinions here. See my <a className="welcomeMessage" href="/wineries"
                 title="Reviews of Wineries in San Luis Obispo and Paso Robles"
                 >All Wine Places</a> section to 
                 see all of my personal reviews or select a winery or tasting room below.

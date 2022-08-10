@@ -18,8 +18,10 @@ const SearchBar = () => {
         <>
         <div className="searchResults">
         <h2>Wine Place Search Tool</h2>
-        <labe>Enter Search Term: </labe>
-        <input className="search" type="text" value={searchPhrase} name="search-term" placeholder="search"
+        <p>Scroll down to see wineries by location or use the Search Tool below to narrow down by winery name.</p>
+        <label>Enter Search Term: </label>
+        <input style={{padding: "4px", boxSizing: "border-box", 
+            border: "1px solid black"}} className="search" type="text" value={searchPhrase} name="search-term" placeholder="search"
             onChange={event =>{setSearchPhrase(event.target.value)}}/>
 
         <section>
@@ -35,7 +37,7 @@ const SearchBar = () => {
             }).map((product) => 
                     <div>
                         <a href={`http://lipstainedglass.com/wineries/${product.id}`}>
-                        {product.name} <span className="learnMoreLink">Click to learn more</span>
+                        {product.name} <span className="learnMoreLink">See details.</span>
                         </a>
                     </div>
             )}

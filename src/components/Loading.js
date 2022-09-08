@@ -6,7 +6,7 @@ const Loading = () => {
     return (
         <div style={{textAlign: "center"}}>
             <p><img src={giflogo} style={{maxWidth: "100px"}} alt="logo" /></p>
-            <h2>Loading Places...</h2>
+            <h2>Loading...</h2>
         </div>
     )
 };

@@ -46,7 +46,7 @@ export const SinglePostPage = () => {
           : ''}
       </article>
       :
-      <p style={{textAlign: "center"}}>Please be patient as we're querying the database...
+      <p style={{textAlign: "center"}}>Please be patient as we're querying the database...<br></br>
       <img src={giflogo} style={{maxWidth: "100px"}} alt="Lipstickstained logo" />
       </p>
       } 

@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { fetchPosts, deletePost } from '../actions/postActions';
 import Loading from './Loading';
-
+import Data from './Data';
 
 class Posts extends Component {
 
@@ -85,6 +85,8 @@ async onDelete (id) {
         console.error(error)
     }
 };
+
+
     render() {
 
         const postItems = this.props.posts.map(
@@ -102,13 +104,34 @@ async onDelete (id) {
                 <p><span style={{fontWeight: "bold"}}>Location:</span> {post.location}</p>
             </div>)
             )
-          
+//Data.js Prep for when Heroku disappears in November 2022
+            // const dataPost = Data.posts.map(
+            //      post => 
+            //     ( <div key={post.id} className="winePlace">
+            //         <h2><Link to={`/wineries/${post.id}`} className="button muted-button wineName">{post.name}</Link></h2>
+            //         <p>{post.description}</p>
+                    
+            //         <Link to={`/wineries/${post.id}`} className="button muted-button">
+            //         <img style={{maxHeight: '300px', maxWidth: "220px"}} alt={post.name + ' Picture in SLO County'} src={post.productimage}/>
+            //             View More Details
+            //         </Link>
+            //         <p>ID: {post.id}</p>
+            //         <p><span style={{fontWeight: "bold"}}>Kid-Friendly:</span> {post.active? 'Yes' : 'No'}</p>
+            //         <p><span style={{fontWeight: "bold"}}>Location:</span> {post.location}</p>
+            //     </div>)
+            //     )          
 
         return (  
             <>
-                <h1>Lipstained Glass' Visited Wineries</h1>
-                {postItems.length === 0? <Loading /> : <h3>There are {postItems.length} Visited Wineries or Tasting Rooms</h3>}
-                <div className="winePlaces">{postItems.length > 0 ? postItems : <p>Thank you for your patience as we're querying the database.</p> }</div>
+            <h1>Lipstained Glass' Visited Wineries</h1>
+             {postItems.length === 0? <Loading /> : <h3>There are {postItems.length} Visited Wineries or Tasting Rooms</h3>}
+            <div className="winePlaces">{postItems.length > 0 ? postItems : <p>Thank you for your patience as we're querying the database.</p> }</div>
+
+           
+                {/* <h1>Visited Wineries</h1>
+                {dataPost.length === 0? <Loading /> : <h3>There are {dataPost.length} Visited Wineries or Tasting Rooms</h3>}
+                <div className="winePlaces">{dataPost.length > 1 ? dataPost: <p>Still loading...</p>}</div>
+           */}
             </>
         )
     }

@@ -100,7 +100,7 @@ async onDelete (id) {
                     View More Details
                 </Link>
                 <p>ID: {post.id}</p>
-                <p><span style={{fontWeight: "bold"}}>Kid-Friendly:</span> {post.active? 'Yes' : 'No'}</p>
+                <p><span style={{fontWeight: "bold"}}>ADA-Friendly:</span> {post.active? 'Yes' : 'No'}</p>
                 <p><span style={{fontWeight: "bold"}}>Location:</span> {post.location}</p>
             </div>)
             )

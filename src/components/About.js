@@ -25,7 +25,7 @@ const About = () => {
             </p>
             <p>All of the wineries I've visited so far are family-friendly, some more friendly than others which I'll
                 note in my reviews. See all of my reviews
-                on one page under <a href="/wineries">All Wine Places</a>.</p>
+                on one page under <a href="http://www.sanluisobispomom.com/blog/san-luis-obispo-county-winery-reviews">All Wine Places</a>.</p>
 
             <h3>Discovery</h3>
             <p>Even as a native Californian, I was oblivious to the bliss of the Central Coast of California. It's so much slower

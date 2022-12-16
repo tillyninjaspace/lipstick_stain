@@ -28,7 +28,7 @@ const Footer = ({isChanged, setIsChanged, token, setToken}) => {
             </svg></a>
             </p>
             <p className="footerLinks">
-                <span class="footerButton"><a href="/wineries">All Wine Places</a></span>
+                <span class="footerButton"><a href="http://www.sanluisobispomom.com/blog/san-luis-obispo-county-winery-reviews">All Wine Places</a></span>
                 <span class="footerButton"><a href="/about">About</a></span>
 
                { token ? 

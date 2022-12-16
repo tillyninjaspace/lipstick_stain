@@ -76,8 +76,8 @@ function App() {
       {isNavOpen? 
       <section className="babyNav">
           <NavLink to="/">Home</NavLink>
-          <NavLink to="/wineries">All Wine Places</NavLink>
-          <NavLink to="/edna-valley-and-paso-robles-wineries">Edna Valley &amp; Paso Robles Locations</NavLink>
+          {/* <NavLink to="/wineries">All Wine Places</NavLink>
+          <NavLink to="/edna-valley-and-paso-robles-wineries">Edna Valley &amp; Paso Robles Locations</NavLink> */}
           <NavLink to="/about">About</NavLink>
       </section>
       :
@@ -85,8 +85,8 @@ function App() {
       } 
       <section className="topNav">
       <NavLink to="/" className="nav">Home</NavLink>
-      <NavLink to="/wineries" className="nav">All Wine Places</NavLink>
-      <NavLink to="/edna-valley-and-paso-robles-wineries" className="nav">Edna Valley &amp; Paso Robles Locations</NavLink>
+      {/* <NavLink to="/wineries" className="nav">All Wine Places</NavLink>
+      <NavLink to="/edna-valley-and-paso-robles-wineries" className="nav">Edna Valley &amp; Paso Robles Locations</NavLink> */}
       <NavLink to="/about" className="nav">About</NavLink>
       </section>
       <hr></hr>
@@ -96,14 +96,17 @@ function App() {
               <>
               <Welcome />
                {/* <Posts /> */}
-               <h1>Select a Wine Place to Read a Review</h1>
-               { paginationItems.length <= 0 ? <Loading/> :
+               <h3>The original database has been deprecated. Please click on this link to see reviews: &nbsp;
+                    <a href="http://www.sanluisobispomom.com/blog/san-luis-obispo-county-winery-reviews">Wineries Reviews by Rank</a>
+               </h3>
+               {/* { 
+               paginationItems.length <= 0 ? <Loading/> :
                <ul className="pagination">
 
                   {paginationItems && currentPosts.map(post => (
                     <li key={post.id} className="listItem">
                     <Link to={`/wineries/${post.id}`} className="button muted-button">
-                      {/* <p>{post.id}</p> */}
+          
                       <h3 className="wineName">{post.name}</h3>
                       <p style={{textAlign: 'center'}}><img src={post.productimage} alt="Wine or Winery"/></p>
                     </Link>
@@ -111,8 +114,8 @@ function App() {
                   ))
                   }
                </ul>
-                }
-               <h5 style={{textAlign: "left", marginBottom: "0px"}}>Go to Page</h5>
+                } */}
+               {/* <h5 style={{textAlign: "left", marginBottom: "0px"}}>Go to Page</h5> */}
                 {pageNumbers.map(number => (
                     <div key={number} className="page" style={{color: "red"}}>
                         <button onClick={() => setCurrentPage(number)} className="pageLink" >
